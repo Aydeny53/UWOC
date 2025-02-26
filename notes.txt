@@ -7,3 +7,7 @@ if i want github to reflect my changes so then im gonna do:
 *Fonts
 script src="https://kit.fontawesome.com/c513779648.js"
 crossorigin="anonymous"></script>
+
+Java makes website do stuff
+html puts the stuff on the site
+css makes it look nice
