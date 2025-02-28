@@ -18,6 +18,8 @@ body {
     background-size: cover;
     background position: center;
     background-repeat: no-repeat;
+    align-items: center;
+    justify-content: content;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -28,5 +30,5 @@ body {
 .loading-text {
     font-size: 50px;
     color: white;
-    
+
 }
