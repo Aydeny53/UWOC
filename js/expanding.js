@@ -1,3 +1,9 @@
 const panels = document.querySelectorAll('.panel')
 
-console.log
+// console.log("Hello")
+// console.log(panels)
+
+panels.forEach (panel => {
+
+
+})
