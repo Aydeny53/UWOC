@@ -28,7 +28,7 @@ body {
     color: black;
     cursor: pointer;
     position: relative; /* If anything inside this is absolute, position is relative to this item*/
-    transition: all 1s ease-out;
+    transition: all 1s ease-out, all 1s transform 2s;
 }
 
 
