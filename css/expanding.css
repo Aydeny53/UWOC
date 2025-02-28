@@ -41,5 +41,9 @@ body {
 
 
 .panel.active {
-    flex = 10;
+    flex: 10;
+}
+
+.panel.active h3 {
+    opacity: 1;
 }
