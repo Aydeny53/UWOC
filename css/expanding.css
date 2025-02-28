@@ -28,7 +28,7 @@ body {
     color: black;
     cursor: pointer;
     position: relative; /* If anything inside this is absolute, position is relative to this item*/
-    transition: all 1s ease-out;
+    transition: all 1s ease-out; /*Is controlling flex and tranform*/
 }
 
 
@@ -39,7 +39,7 @@ body {
     left: 20px;
     margin: 0;
     opacity: 0;
-    transition: opacity .4s ease-in .5s transform 1s;
+    transition: opacity .4s ease-in .5s ; /*doesnt happen until 'all' transition is finished*/
 }
 
 
