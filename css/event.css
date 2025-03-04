@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: linear-gradient(90deg, plum, powderblue);
+}
+
+
+.box {
+    /* Change color of boxes differently */
+    background-color: #bb33bb;
+    color: white;
+    height: 50px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: flex; /* Lets you center items*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /*takes pixels off the hard corners */
+}
+
+#element1 {
+    background-color: powderblue;
+    position: absolute; /*If I wanted to make it relative to something else, use position: relative;*/
+    top: 0px;
+    left: 0px;
+}
+
+#element2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#element3 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+#element4 {
+    position: absolute; 
+    right: 0px;
+    top: 0px;
+}

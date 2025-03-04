@@ -4,10 +4,15 @@ if i want github to reflect my changes so then im gonna do:
 3: git push
 4: it'll ask for my password
 
+
 *Fonts
 script src="https://kit.fontawesome.com/c513779648.js"
 crossorigin="anonymous"></script>
 
+
 Java makes website do stuff
 html puts the stuff on the site
 css makes it look nice
+
+
+<br> Makes the text start a new line
