@@ -14,23 +14,23 @@ body {
 
 
 .box {
-    /* Change color of boxes differently */
+
     background-color: #bb33bb;
     color: white;
     height: 50px;
     width: 300px;
     padding: 10px;
     margin: 10px;
-    display: flex; /* Lets you center items*/
+    display: flex; 
     justify-content: center;
     align-items: center;
-    border-radius: 8px; /*takes pixels off the hard corners */
+    border-radius: 8px;
     cursor: pointer;
 }
 
 #element1 {
     background-color: powderblue;
-    position: absolute; /*If I wanted to make it relative to something else, use position: relative;*/
+    position: absolute;
     top: 0px;
     left: 0px;
 }

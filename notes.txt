@@ -16,3 +16,8 @@ css makes it look nice
 
 
 <br> Makes the text start a new line
+
+
+If I want to make something positioned relative to another item, use position: relative;
+
+display: flex lets you center items
