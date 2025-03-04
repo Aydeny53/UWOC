@@ -29,6 +29,17 @@ document.addEventListener('keyup', (event)=> {
     console.log(event.key) /* Shows what key is being pressed*/
 
     if (event.key == 'ArrowDown') {
-
+        positionY = positionY + 10
     }
+    else if (event.key == 'ArrowUp') {
+        positionY = positionY - 10
+    }
+    else if (event.key == 'ArrowLeft') {
+        positionX = positionX + 10
+    }
+    else if (event.key == 'ArrowRight') {
+        positionX = positionX - 10
+    }
+    element3.style.top = `${positionY}px`
+    element3.style.right = `${positionX}px`
 })
