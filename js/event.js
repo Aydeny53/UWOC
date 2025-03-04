@@ -22,26 +22,32 @@ element2.addEventListener('mouseout', ()=> {
     element2.style.backgroundColor = "powderblue"
 })
 
-let positionY = 0; /*537*/ 
+let positionY = 0; /*537*/
 let positionX = 0;
 
-document.addEventListener('keyup', (event)=> {
+document.addEventListener('keydown', (event)=> {
     console.log(event.key) /* Shows what key is being pressed*/
 
     if (event.key == 'ArrowDown') {
-        positionY = positionY + 10
+        positionY = positionY - 5
     }
     else if (event.key == 'ArrowUp') {
-        positionY = positionY - 10
+        positionY = positionY + 5
     }
     else if (event.key == 'ArrowLeft') {
-        positionX = positionX + 10
+        positionX = positionX + 5
     }
     else if (event.key == 'ArrowRight') {
-        positionX = positionX - 10
+        positionX = positionX - 5
     }
-    element3.style.top = `${positionY}px`
-    element3.style.right = `${positionX}px`
+    if (positionY < 0) {
+        positionY = 0
+    }
+    if (positionX < 0) {
+        positionX = 0
+    }
+    element3.style.bottom = `${positionY}%`
+    element3.style.right = `${positionX}%`
 })
 
 
