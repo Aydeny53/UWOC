@@ -22,7 +22,7 @@ element2.addEventListener('mouseout', ()=> {
     element2.style.backgroundColor = "powderblue"
 })
 
-let positionY = 0;
+let positionY = 100;
 let positionX = 0;
 
 document.addEventListener('keyup', (event)=> {
@@ -42,4 +42,12 @@ document.addEventListener('keyup', (event)=> {
     }
     element3.style.top = `${positionY}px`
     element3.style.right = `${positionX}px`
+})
+
+
+element4.addEventListener('click', ()=> {
+    element4.style.width = "10px"
+    element4.style.height = "10px"
+    element4.innerHTML = ""
+    element4.style.opacity = .3
 })
