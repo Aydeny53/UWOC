@@ -25,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 8px; /*takes pixels off the hard corners */
+    cursor: pointer;
 }
 
 #element1 {
@@ -47,7 +48,7 @@ body {
 }
 
 #element4 {
-    position: absolute; 
+    position: absolute;
     right: 0px;
     top: 0px;
 }
