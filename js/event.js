@@ -22,7 +22,7 @@ element2.addEventListener('mouseout', ()=> {
     element2.style.backgroundColor = "powderblue"
 })
 
-let positionY = 537;
+let positionY = 0; /*537*/
 let positionX = 0;
 
 document.addEventListener('keyup', (event)=> {
