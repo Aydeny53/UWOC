@@ -51,3 +51,18 @@ element4.addEventListener('click', ()=> {
     element4.innerHTML = ""
     element4.style.opacity = .3
 })
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'j') {
+        element4.style.width = "300px"
+        element4.style.height = "50px"
+        element4.innerHTML = "<h4>Click Me to make me small <br>Press the Letter 'J' to bring me back!</h4>"
+        element4.style.opacity = 1
+    }
+})
+
+
+const list = ['running', 'paused']
+let index = 0
+element5.addEventListener('click', ()=> {
+    element5.style.animationPlayState = list[index]
+})
