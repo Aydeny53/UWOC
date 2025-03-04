@@ -21,7 +21,7 @@ body {
     width: 300px;
     padding: 10px;
     margin: 10px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -36,18 +36,21 @@ body {
 }
 
 #element2 {
+    background-color: powderblue;
     position: absolute;
     bottom: 0px;
     left: 0px;
 }
 
 #element3 {
+    background-color: plum;
     position: absolute;
     right: 0px;
     bottom: 0px;
 }
 
 #element4 {
+    background-color: plum;
     position: absolute;
     right: 0px;
     top: 0px;
