@@ -6,7 +6,7 @@ element1.addEventListener('click', ()=> {
     element1.innerHTML = "I've been clicked! <br> Try doubling clicking me!"
 })
 
-element1.addEventListener('dblclick' ()=> {
+element1.addEventListener('dblclick', ()=> {
     element1.innerHTML = "I've been double clicked! <br> Try single clicking me!"
 })
 
