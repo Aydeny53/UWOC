@@ -14,13 +14,6 @@ body {
     margin: 0;
 }
 
-.image {
-    position: end;
-
-    height: 300px;
-    width: -300px;
-}
-
 .peak {
 
     top: 100;
@@ -37,8 +30,13 @@ body {
 }
 .gif {
     margin: 0;
-    : 100px;
-    height: 100vh;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 
+}
+
+.links {
+    background-color: plum;
+    margin: 25px;
+    border-radius: 5px;
 }

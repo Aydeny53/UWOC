@@ -43,10 +43,16 @@ body {
 }
 
 #element3 {
-    background-color: plum;
+    background-image: url('images/little.png');
+    /* background-color: plum; */
     position: absolute;
     right: 0px;
-    bottom: 0px;
+    bottom: 45px;
+    margin: 0;
+}
+.little {
+    height: 100px;
+    width: 220px;
 }
 
 #element4 {
@@ -69,6 +75,7 @@ body {
 }
 
 #element5 {
+    /* background-color: #bb33bb; */
     animation: spin .3s linear infinite; /*name of keyframe anim, how long anim will take, anim type, how long it will run*/
     animation-play-state: paused;
 }

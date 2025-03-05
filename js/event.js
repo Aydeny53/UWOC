@@ -22,7 +22,7 @@ element2.addEventListener('mouseout', ()=> {
     element2.style.backgroundColor = "powderblue"
 })
 
-let positionY = 0; /*537*/
+let positionY = 3; /*537*/
 let positionX = 0;
 
 document.addEventListener('keydown', (event)=> {
@@ -40,8 +40,8 @@ document.addEventListener('keydown', (event)=> {
     else if (event.key == 'ArrowRight') {
         positionX = positionX - 5
     }
-    if (positionY < 0) {
-        positionY = 0
+    if (positionY < 5) {
+        positionY = 5
     }
     if (positionX < 0) {
         positionX = 0
