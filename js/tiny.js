@@ -3,7 +3,11 @@ const food = document.querySelector('.food')
 
 
 let positionY = 0;
-let positionX = 0;
+let positionX = 0; 
+
+// let posY = food.style.top
+// let possX = food.style.left
+//if positionX > posY tionY > posY
 let foodPosY = food.style.top + 775;
 let foodPosX = food.style.left + 800;
 document.addEventListener('keyup', (event)=> {
