@@ -4,8 +4,8 @@ const food = document.querySelector('.food')
 
 let positionY = 0;
 let positionX = 0;
-let foodPosY = food.style.top + 650;
-let foodPosX = food.style.left + 600;
+let foodPosY = food.style.top + 775;
+let foodPosX = food.style.left + 800;
 document.addEventListener('keyup', (event)=> {
     console.log(event.key)
 
