@@ -11,6 +11,8 @@ let foodPosY = 55;
 let foodPosX = 75;
 
 
+let finished = false;
+
 document.addEventListener('keyup', (event)=> {
     console.log(event.key)
 
@@ -40,15 +42,16 @@ document.addEventListener('keyup', (event)=> {
     //Triggers 'win' area
     if (positionY > foodPosY && positionX > foodPosX) {
         little.src = "images/Full.png"
-        // little.style.backgroundColor = "blue";
+        finished = true;
     }
     else if (positionY < foodPosY || positionX < foodPosX) {
-        little.style.backgroundColor = "transparent";
+        finished = false;
     }
 
-    if (little.src == "images/Full.png") {
+    if (finished) {
         positionY = positionY - 10
         positionX = positionX - 10
+        text.innerHTML = "Yippee, he's not starving :)"
     }
 
 
