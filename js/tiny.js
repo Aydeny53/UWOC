@@ -6,15 +6,10 @@ const text = document.querySelector('.text')
 let positionY = 0;
 let positionX = 0;
 
-// let posY = food.style.top
-// let possX = food.style.left
-//if positionX > posY tionY > posY
-// let foodPosY = food.style.top + 775;
-// let foodPosX = food.style.left + 800;
 
 let foodPosY = 55;
 let foodPosX = 75;
-let finished = false;
+
 
 document.addEventListener('keyup', (event)=> {
     console.log(event.key)
@@ -32,6 +27,8 @@ document.addEventListener('keyup', (event)=> {
     else if (event.key == 'ArrowRight') {
         positionX = positionX - 5
     }
+
+    //Can't leave beginning borders
     if (positionY < 0) {
         positionY = 0
     }
@@ -40,11 +37,7 @@ document.addEventListener('keyup', (event)=> {
     }
 
 
-    // if (little.style.bottom < foodPosY && little.style.right < foodPosX) {
-    //     little.style.backgroundColor = "transparent";
-    // }
-
-    // little.style.bottom
+    //Triggers 'win' area
     if (positionY > foodPosY && positionX > foodPosX) {
         little.style.backgroundColor = "blue";
     }
@@ -56,6 +49,9 @@ document.addEventListener('keyup', (event)=> {
         positionY = positionY - 10
         positionX = positionX - 10
     }
+
+
+    //If leaves end borders
     if (positionY == 110 || positionX == 110) {
         positionY = 55
         positionX = 45
