@@ -51,7 +51,7 @@ document.addEventListener('keyup', (event)=> {
     if (finished) {
         positionY = positionY - 10
         positionX = positionX - 10
-        text.innerHTML = "Yippee, he's not starving :)"
+        text.innerHTML = "<h1> Yippee, he's not starving :) <h1>"
     }
 
 
@@ -59,7 +59,7 @@ document.addEventListener('keyup', (event)=> {
     if (positionY == 110 || positionX == 110) {
         positionY = 55
         positionX = 45
-        text.innerHTML = "Why did you do that? :( <br> He got lost"
+        text.innerHTML = " <h1> Why did you do that? :( <br> He got lost <h1>"
 
 
     }
