@@ -12,7 +12,7 @@ let positionX = 0;
 // let foodPosY = food.style.top + 775;
 // let foodPosX = food.style.left + 800;
 
-let foodPosY = 60;
+let foodPosY = 55;
 let foodPosX = 75;
 
 document.addEventListener('keyup', (event)=> {
