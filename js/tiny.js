@@ -14,6 +14,7 @@ let positionX = 0;
 
 let foodPosY = 55;
 let foodPosX = 75;
+let finished = false;
 
 document.addEventListener('keyup', (event)=> {
     console.log(event.key)
@@ -55,7 +56,7 @@ document.addEventListener('keyup', (event)=> {
         positionY = positionY - 10
         positionX = positionX - 10
     }
-    if (positionY == 125 || positionX == 125) {
+    if (positionY == 110 || positionX == 110) {
         positionY = 55
         positionX = 45
         text.innerHTML = "Why did you do that? :( <br> He got lost"
