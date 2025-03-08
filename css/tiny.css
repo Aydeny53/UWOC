@@ -14,8 +14,6 @@ body {
 
 .food {
     position: absolute;
-    /* height: 190px;
-    width: 330px; */
     height: 35%;
     width: 25%;
     top: 0px;
@@ -24,8 +22,6 @@ body {
 
 .little {
     position: absolute;
-    /* height: 130px;
-    width: 230px; */
     height: 26.25%;
     width: 15%;
     bottom: 0px;
