@@ -39,6 +39,7 @@ document.addEventListener('keyup', (event)=> {
 
     //Triggers 'win' area
     if (positionY > foodPosY && positionX > foodPosX) {
+        
         little.style.backgroundColor = "blue";
     }
     else if (positionY < foodPosY || positionX < foodPosX) {
