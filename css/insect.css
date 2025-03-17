@@ -13,3 +13,17 @@ body {
     margin: 0;
     text-align: center;
 }
+
+h1 {
+    line-height: 1.4;
+
+}
+
+
+.btn {
+    border: 0;
+    background-color: white;
+    color: linear-gradient(90deg, plum, powderblue);
+    padding: 15px 20px;
+    font-family: inherit;
+}
