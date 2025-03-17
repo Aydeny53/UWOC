@@ -44,10 +44,32 @@ h1 {
 }
 
 
-.insect-list {
+.insects-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     padding: 0;
+}
+
+
+.insects-list li {
+    margin: 10px
+}
+
+
+.choose-insect-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
+}
+
+.choose-insect-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
