@@ -21,3 +21,7 @@ css makes it look nice
 If I want to make something positioned relative to another item, use position: relative;
 
 display: flex lets you center items
+
+
+
+alt + z : Makes it so text doesnt run off sides of coding screen
