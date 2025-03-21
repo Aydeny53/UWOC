@@ -64,13 +64,14 @@ function createInsect() {
     const {x, y} = getRandomLocation()
     insect.style.top = `${y}px`
     insect.style.left = `${x}px`
-    const game = true;
-    while (game){
+
     game_container.appendChild(insect)
     insect.addEventListener('click', ()=> {
+        score2 = score2 + 1
+        scoreEl.innerHTML =
         game_container.removeChild(insect)
     })
-    }
+
 
 }
 
