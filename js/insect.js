@@ -67,9 +67,11 @@ function createInsect() {
 
     game_container.appendChild(insect)
     insect.addEventListener('click', ()=> {
-        score2 = score2 + 1
-        score.innerHTML = `Score: ${score2}`
-        game_container.removeChild(insect)
+        catchInsect()
+        increaseScore()
+        // score2 = score2 + 1
+        // score.innerHTML = `Score: ${score2}`
+        // game_container.removeChild(insect)
     })
 
 
@@ -79,6 +81,13 @@ function createInsect() {
 function catchInsect() {
     increaseScore()
     this.classList.add('caught')
+    setTimeout ( ()=> this.remove(), 2000)
+    addInsect()
+}
+
+function addInsect() {
+    setTimeout(createInsect, 2000)
+    setTimeout(createInsect, 2000)
 }
 
 function increaseScore() {
