@@ -30,3 +30,11 @@ alt + z : Makes it so text doesnt run off sides of coding screen
 font-family: inherit;  = Makes whatever inside button use font of whatever rest of website is using
 The Prankster
 The Dumb
+
+
+emmet
+
+
+seal = always round up
+floor = always round down
+round = round normally
