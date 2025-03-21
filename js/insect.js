@@ -68,7 +68,7 @@ function createInsect() {
     game_container.appendChild(insect)
     insect.addEventListener('click', ()=> {
         score2 = score2 + 1
-        scoreEl.innerHTML =
+        scoreEl.innerHTML = `Score: ${score}`
         game_container.removeChild(insect)
     })
 
