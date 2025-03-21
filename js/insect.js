@@ -68,11 +68,22 @@ function createInsect() {
     game_container.appendChild(insect)
     insect.addEventListener('click', ()=> {
         score2 = score2 + 1
-        score.innerHTML = `Score: ${score}`
+        score.innerHTML = `Score: ${score2}`
         game_container.removeChild(insect)
     })
 
 
+
+}
+
+function catchInsect() {
+    increaseScore()
+    this.classList.add('caught')
+}
+
+function increaseScore() {
+    score2 = score2 + 1
+    score.innerHTML = `Score: ${score2}`
 }
 
 function getRandomLocation() {
