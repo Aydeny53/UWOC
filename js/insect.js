@@ -80,18 +80,21 @@ function catchInsect() {
     increaseScore()
     console.log(this)
     insect.classList.add('caught')
-    setTimeout ( ()=> insect.remove(), 2000)
+    setTimeout ( ()=> insect.remove(), 200)
     addInsect()
 }
 
 function addInsect() {
-    setTimeout(createInsect, 2000)
-    setTimeout(createInsect, 2000)
+    setTimeout(createInsect, 200)
+    setTimeout(createInsect, 200)
 }
 
 function increaseScore() {
     score2 = score2 + 1
     score.innerHTML = `Score: ${score2}`
+    if (score2 == 10){
+        message.classList.add('visible')
+    }
 }
 
 function getRandomLocation() {
