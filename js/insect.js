@@ -68,7 +68,7 @@ function createInsect() {
     game_container.appendChild(insect)
     insect.addEventListener('click', ()=> {
         catchInsect()
-        increaseScore()
+        // increaseScore()
     })
 
 
