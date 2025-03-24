@@ -9,6 +9,7 @@ const message = document.getElementById('message')
 let seconds = 00
 let minutes = 00
 let score2 = 0
+let amount = 0
 let selected_insect = {}
 
 start_btn.addEventListener('click', ()=> {
@@ -85,6 +86,8 @@ function catchInsect() {
 }
 
 function addInsect() {
+    amount = Math.flooramount + .5
+
     setTimeout(createInsect, 200)
     setTimeout(createInsect, 200)
 }
