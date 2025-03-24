@@ -69,9 +69,6 @@ function createInsect() {
     insect.addEventListener('click', ()=> {
         catchInsect()
         increaseScore()
-        // score2 = score2 + 1
-        // score.innerHTML = `Score: ${score2}`
-        // game_container.removeChild(insect)
     })
 
 
@@ -99,8 +96,8 @@ function getRandomLocation() {
     const width = window.innerWidth
     const height = window.innerHeight
     console.log(Math.random())
-    const x = Math.random() * width
-    const y = Math.random() * height
+    const x = Math.random() * (width-200) + 100
+    const y = Math.random() * (height-200) + 100
     return {x, y}
 
 }
