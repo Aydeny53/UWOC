@@ -10,6 +10,7 @@ let seconds = 00
 let minutes = 00
 let score2 = 0
 let amount = 0
+let current = 0
 let selected_insect = {}
 
 start_btn.addEventListener('click', ()=> {
@@ -68,6 +69,7 @@ function createInsect() {
 
     game_container.appendChild(insect)
     insect.addEventListener('click', ()=> {
+        // determineAmount()
         catchInsect()
         // increaseScore()
     })
@@ -79,17 +81,25 @@ function createInsect() {
 function catchInsect() {
     let insect = event.target;
     increaseScore()
-    console.log(this)
+
     insect.classList.add('caught')
+    // game_container.removeChild(insect)
     setTimeout ( ()=> insect.remove(), 200)
     addInsect()
 }
 
-function addInsect() {
-    amount = Math.flooramount + .5
+function determineAmount() {
+    amount = Math.floor(amount + .5)
+    catchInsect()
+}
 
-    setTimeout(createInsect, 200)
-    setTimeout(createInsect, 200)
+function addInsect() {
+    // while (amount > current) {
+
+        setTimeout(createInsect, 200)
+        setTimeout(createInsect, 200)
+    //     current = current + 1;
+    // }
 }
 
 function increaseScore() {
