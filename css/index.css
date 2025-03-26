@@ -73,7 +73,7 @@ body {
 
 .menu.active {
     /* transform: rotate(0deg) */
-    padding: 150px 75px;
+
     /* transform: rotate(45deg); */
     /* left: 90px;
     top: 258px; */
@@ -81,10 +81,11 @@ body {
 }
 
 .menu.active.doubleActive {
+    padding: 150px 75px;
     transform: rotate(25deg);
 }
 .menu.active.doubleActive.tripleActive {
-    transition:ease-out 1s;
+    transition: ease-out 1s;
     transform: rotate(15deg);
 }
 
