@@ -87,6 +87,10 @@ body {
     transform: rotate(15deg);
 }
 
+.menu.active.doubleActive.quadActive {
+    transform: rotate(0deg);
+}
+
 
 .links {
     position: absolute;
