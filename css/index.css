@@ -84,6 +84,7 @@ body {
     transform: rotate(25deg);
 }
 .menu.active.doubleActive.tripleActive {
+    transition:ease-out 1s;
     transform: rotate(15deg);
 }
 
