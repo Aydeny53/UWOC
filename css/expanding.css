@@ -29,6 +29,7 @@ body {
     cursor: pointer;
     position: relative; /* If anything inside this is absolute, position is relative to this item*/
     transition: all 1s ease-out; /*Is controlling flex and tranform*/
+    top: 50px;
 }
 
 

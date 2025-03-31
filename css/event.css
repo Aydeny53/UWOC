@@ -31,7 +31,7 @@ body {
 #element1 {
     background-color: powderblue;
     position: absolute;
-    top: 0px;
+    top: 70px;
     left: 0px;
 }
 
@@ -59,7 +59,7 @@ body {
     background-color: plum;
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: 70px;
 }
 
 
