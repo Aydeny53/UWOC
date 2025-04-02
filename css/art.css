@@ -342,4 +342,18 @@ body {
     width: 80px;
 }
 
+.overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: -moz-radial-gradient(transparent 150px, rgba(0, 0, 0, 1) 150px);
+    background: -webkit-radial-gradient(transparent 150px, rgba(0, 0, 0, 1) 150px);
+    background: -ms-radial-gradient(transparent 150px, rgba(0, 0, 0, 1) 150px);
+    background: -o-radial-gradient(transparent 150px, rgba(0, 0, 0, 1) 150px);
+    pointer-events: none;
+    z-index: 2000;
+}
+
 #A185FF
