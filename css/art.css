@@ -337,22 +337,23 @@ body {
     color: black;
     position:absolute;
     bottom: 130px;
-    right: 180px;
+    right: 190px;
     height: 20px;
     width: 80px;
 }
 
-.overlay {
-    top: 0;
-    left: 0;
+.bubble {
+    bottom: 167px;
+    right: -890px;
     position: absolute;
-    width: 600px;
-    height: 600px;
-    background: -moz-radial-gradient(transparent 150px, rgba(0, 0, 0, 1) 150px);
-    background: -webkit-radial-gradient(transparent 150px, rgba(0, 0, 0, 1) 150px);
-    background: -ms-radial-gradient(transparent 150px, rgba(0, 0, 0, 1) 150px);
-    background: -o-radial-gradient(transparent 150px, rgba(0, 0, 0, 1) 150px);
+    width: 240px;
+    height: 160px;
+    background: -moz-radial-gradient(transparent 100px, rgba(0, 0, 0, 1) 70px);
+    background: -webkit-radial-gradient(transparent 100px, rgba(0, 0, 0, 1) 70px);
+    background: -ms-radial-gradient(transparent 100px, rgba(0, 0, 0, 1) 70px);
+    background: -o-radial-gradient(transparent 100px, rgba(0, 0, 0, 1) 70px);
     pointer-events: none;
+    border-radius: 50%;
     z-index: 2000;
 }
 
