@@ -356,5 +356,18 @@ body {
     border-radius: 50%;
     z-index: 2000;
 }
+.bubbleTriangle{
+    position:absolute;
+    align-items:center;
+    justify-content: center;
+    bottom: 90px;
+    right: 40px;
+	width: 0;
+	height: 0;
+	border-left: 250px solid transparent;
+	border-right: 295px solid transparent;
+	border-bottom: 150px solid #BAA5FF;
+    z-index: 2000;
+}
 
 #A185FF
