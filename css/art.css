@@ -360,13 +360,13 @@ body {
     position:absolute;
     align-items:center;
     justify-content: center;
-    bottom: 90px;
-    right: 40px;
+    bottom: 17px;
+    right: 0px;
 	width: 0;
 	height: 0;
-	border-left: 250px solid transparent;
-	border-right: 295px solid transparent;
-	border-bottom: 150px solid #BAA5FF;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid black;
     z-index: 2000;
 }
 
