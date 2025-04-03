@@ -75,7 +75,7 @@ body {
 	border-left: 250px solid transparent;
 	border-right: 295px solid transparent;
 	border-bottom: 350px solid #BAA5FF;
-    z-index: -3
+    z-index: 0
 }
 .mountain2Shade {
     position:absolute;
@@ -88,7 +88,7 @@ body {
 	border-left: 250px solid transparent;
 	border-right: 255px solid transparent;
 	border-bottom: 350px solid #A185FF;
-    z-index: -2
+    z-index: 1
 }
 .mountain3 {
     position:absolute;
@@ -127,7 +127,7 @@ body {
 	border-left: 250px solid transparent;
 	border-right: 185px solid transparent;
 	border-bottom: 200px solid #BAA5FF;
-    z-index:-2;
+    z-index:2;
 }
 .mountain4Shade {
     position:absolute;
@@ -140,7 +140,7 @@ body {
 	border-left: 250px solid transparent;
 	border-right: 145px solid transparent;
 	border-bottom: 200px solid #A185FF;
-    z-index: -1;
+    z-index: 3;
 }
 
 .tree{
@@ -154,7 +154,7 @@ body {
 
     z-index: 500;
 }
-.leaves{
+#treeleaf1{
     position: absolute;
     background-color: #536c73;
     height:400px;
@@ -164,7 +164,7 @@ body {
     border-radius: 50%;
     z-index: 501;
 }
-.leaves2{
+#treeleaf2{
     position: absolute;
     background-color: #536c73;
     height:250px;
@@ -174,7 +174,7 @@ body {
     border-radius: 50%;
     z-index: 501;
 }
-.leaves3{
+#treeleaf3{
     position: absolute;
     background-color: #536c73;
     height:150px;
@@ -247,12 +247,126 @@ body {
     z-index: 501;
 }
 
+
+
+
+#anchor {
+    position: relative;
+    background-color: transparent;
+    height:110px;
+    width: 110px;
+    bottom:-60px;
+    left: -300px;
+    border-radius: 50%;
+    z-index: 1;
+    animation: cloudBreeze linear 55s;
+    animation-iteration-count: infinite;
+
+}
+#cloudPart0 {
+    position: relative;
+    background-color: #d3ceeb;
+    height:110px;
+    width: 110px;
+    bottom:0px;
+    left: -15px;
+    border-radius: 50%;
+    z-index: 11;
+
+}
+#cloudPart1 {
+    position: absolute;
+    background-color: #d3ceeb;
+    height:80px;
+    width: 80px;
+    bottom:0px;
+    left: 65px;
+    border-radius: 50%;
+    z-index: 11;
+
+}
+#cloudPart2 {
+    position: absolute;
+    background-color: #d3ceeb;
+    height:70px;
+    width: 70px;
+    bottom:0px;
+    left: -55px;
+    border-radius: 50%;
+    z-index: 11;
+
+}
+
+
+
+#anchor2 {
+    position: relative;
+    background-color: transparent;
+    height:110px;
+    width: 110px;
+    bottom:-240px;
+    left: -900px;
+    border-radius: 50%;
+    z-index: 1;
+    animation: cloudBreeze2 linear 65s;
+    animation-iteration-count: infinite;
+
+}
+#cloud2Part0 {
+    position: relative;
+    background-color: #d3ceeb;
+    height:110px;
+    width: 110px;
+    bottom:0px;
+    left: -15px;
+    border-radius: 50%;
+    z-index: 11;
+
+}
+#cloud2Part1 {
+    position: absolute;
+    background-color: #d3ceeb;
+    height:80px;
+    width: 80px;
+    bottom:0px;
+    left: 65px;
+    border-radius: 50%;
+    z-index: 11;
+
+}
+#cloud2Part2 {
+    position: absolute;
+    background-color: #d3ceeb;
+    height:70px;
+    width: 70px;
+    bottom:0px;
+    left: -55px;
+    border-radius: 50%;
+    z-index: 11;
+
+}
+
+
+
+
+
+
 .flyer{
+    position:absolute;
     background-color: black;
-    width: 20px;
+    left: 700px;
+    bottom: 400px;
+    width: 10px;
     height: 10px;
     border-radius: 50%;
+    z-index: 1;
+    animation: flyer linear 5s;
+    animation-iteration-count: infinite;
 }
+
+
+
+
 
 .hello{
     background-color: black;
@@ -334,10 +448,11 @@ body {
     transform:  rotate(60deg);
 }
 .helloText {
+    font-size: 3em;
     color: black;
     position:absolute;
     bottom: 130px;
-    right: 190px;
+    right: 210px;
     height: 20px;
     width: 80px;
 }
@@ -370,4 +485,184 @@ body {
     z-index: 2000;
 }
 
-#A185FF
+
+
+
+
+
+.bush{
+    transition: ease;
+    animation: bushSway 20s;
+    animation-iteration-count: infinite;
+}
+.bush2{
+    animation: bushSway 20s;
+    animation-iteration-count: infinite;
+}
+
+.leaves{
+    animation: treeSway 20s;
+    animation-iteration-count: infinite;
+}
+
+.sun {
+    animation: sunSway 5s;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+
+.pointer {
+    position:absolute;
+	width: 0;
+	height: 0;
+    left: -45px;
+    top:-100px;
+	border-left: 55px solid transparent;
+	border-right: 55px solid transparent;
+	border-bottom: 100px solid #BAA5FF;
+    display: block;
+    z-index: 100;
+}
+
+.pointer2{
+    position:absolute;
+    transform: rotate(180deg);
+	width: 0;
+	height: 0;
+    left: -45px;
+    top:90px;
+	border-left: 55px solid transparent;
+	border-right: 55px solid transparent;
+	border-bottom: 100px solid #BAA5FF;
+    display: block;
+    z-index: 100;
+}
+.pointer3{
+    transform: rotate(270deg);
+    position:absolute;
+	width: 0;
+	height: 0;
+    left: -142px;
+    top:-4px;
+	border-left: 55px solid transparent;
+	border-right: 55px solid transparent;
+	border-bottom: 100px solid #BAA5FF;
+    display: block;
+    z-index: 100;
+}
+.pointer4{
+    transform: rotate(90deg);
+    position:absolute;
+	width: 0;
+	height: 0;
+    left: 52px;
+    top:-4px;
+	border-left: 55px solid transparent;
+	border-right: 55px solid transparent;
+	border-bottom: 100px solid #BAA5FF;
+    display: block;
+    z-index: 100;
+}
+
+
+.spinThing {
+    position:absolute;
+
+    bottom: 200px;
+    left: 1040px;
+    width: 20px;
+    height: 100px;
+    animation: rotate 7.5s linear infinite;
+    transform-origin:50% 50%;
+    z-index: 100;
+}
+.spinBase{
+    background-color: black;
+    position:absolute;
+    left: 1040px;
+    width: 20px;
+    height: 200px;
+    bottom: 53px;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+
+@keyframes bushSway {
+    0% { transform: translate(1px, 1px); }
+    10% { transform: translate(-1px, -1px); }
+    20% { transform: translate(-2px, 0px); }
+    30% { transform: translate(1px, 1px); }
+    40% { transform: translate(1px, -1px); }
+    50% { transform: translate(-1px, 1px); }
+    60% { transform: translate(-2px, 1px); }
+    70% { transform: translate(1px, 1px); }
+    80% { transform: translate(-1px, -1px); }
+    90% { transform: translate(1px, 2px); }
+    100% { transform: translate(1px, 1px); }
+  }
+
+@keyframes treeSway{
+    0% {transform: translate(-2px, 0px); }
+    20% {transform: translate(5px, 4px); }
+    40% {transform: translate(-1px, 0px);}
+    60% {transform: translate(3px, 2px);}
+    80% {transform: translate(3px, 5px);}
+    100% {transform: translate(-2px, 2px;) }
+  }
+
+  @keyframes sunSway {
+    0% {transform: translate(3px, 3px);}
+    25% {transform: translate(-3px, 3px);}
+    50% {transform: translate(-3px, -3px);}
+    75% {transform: translate(3px, -3px);}
+    100% {transform: translate(3px, 3px);}
+  }
+
+  @keyframes cloudBreeze {
+    0% {transform: translate(-500px, 0);}
+    100% {transform: translate(1350px, 0);}
+  }
+
+  @keyframes cloudBreeze2 {
+    0% {transform: translate(-850px, 0);}
+    100% {transform: translate(1800px, 0);}
+  }
+
+  @keyframes flyer {
+    0%{transform: translate(-10px, 3px)}
+    5%{transform: translate(-15px, 10px)}
+    10%{transform: translate(-30px, 40px)}
+    15%{transform: translate(-60px, 55px)}
+    20%{transform: translate(-100px, 26px)}
+    25%{transform: translate(-150px, 5px)}
+    30%{transform: translate(-230px, 0px)}
+    45%{transform: translate(-250px, 50px)}
+    50%{transform: translate(-275px, 150px)}
+    55%{transform: translate(-300px, 160px)}
+    60%{transform: translate(-300px, 175px)}
+    65%{transform: translate(-260px, 180px)}
+    70%{transform: translate(-230px, 180px)}
+    75%{transform: translate(-120px, 155px)}
+    80%{transform: translate(-80px, 100px)}
+    85%{transform: translate(-50px, 100px)}
+    90%{transform: translate(-30px, 100px)}
+    93%{transform: translate(0px, 80px)}
+    96%{transform: translate(-10px, 50px)}
+    98%{transform: translate(-20px, 30px)}
+    100%{transform: translate(-10px, 3px)}
+  }
+
+
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
