@@ -38,3 +38,6 @@ emmet
 seal = always round up
 floor = always round down
 round = round normally
+
+
+look at ball.html to see how to center divs

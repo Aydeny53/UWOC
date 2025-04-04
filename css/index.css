@@ -178,7 +178,12 @@ body {
 .art{
     position: absolute;
     right: 65px;
-    top: 45px;
+    top: 40px;
+}
+.ball{
+    position: absolute;
+    right: 65px;
+    top: 80px;
 }
 
 
