@@ -607,10 +607,10 @@ body {
 
 @keyframes treeSway{
     0% {transform: translate(-2px, 0px); }
-    20% {transform: translate(7px, 4px); }
+    20% {transform: translate(7px, 2px); }
     40% {transform: translate(-1px, -1px);}
     60% {transform: translate(5px, 3px);}
-    80% {transform: translate(3px, 4px);}
+    80% {transform: translate(-8px, 4px);}
     100% {transform: translate(-2px, 0px;) }
   }
 
@@ -624,12 +624,12 @@ body {
 
   @keyframes cloudBreeze {
     0% {transform: translate(-500px, 0);}
-    100% {transform: translate(1350px, 0);}
+    100% {transform: translate(1250px, 0);}
   }
 
   @keyframes cloudBreeze2 {
     0% {transform: translate(-850px, 0);}
-    100% {transform: translate(1800px, 0);}
+    100% {transform: translate(1700px, 0);}
   }
 
   @keyframes flyer {

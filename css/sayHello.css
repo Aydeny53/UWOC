@@ -29,9 +29,9 @@ body {
 }
 
 .please {
-    background-color:red;
+    /* background-color:red; */
     position: absolute;
     height: 300px;
     width: 300px;
-    top: 390px;
+    top: 330px;
 }
