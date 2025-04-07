@@ -2,6 +2,8 @@ const ball = document.createElement('div')
 document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
+let LPaddleWidth = 20
+let LPaddleHeight = 100
 const ballRadius = 20
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
@@ -45,3 +47,10 @@ function createBall() {
 }
 
 
+function createLPaddle() {
+    LPaddle.style.height = `${LPaddleHeight}px`
+    LPaddle.style.width = `${LPaddleWidth}px`
+    LPaddle.style.backgroundColor = 'powderblue'
+    LPaddle.style.position = 'absolute'
+    LPaddle.style.left = '10'
+}
