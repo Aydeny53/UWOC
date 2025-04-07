@@ -1,16 +1,21 @@
+const windowHeight = window.innerHeight
+const windowWidth = window.innerWidth
+
+
 const ball = document.createElement('div')
 document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
+
 let LPaddleWidth = 20
 let LPaddleHeight = 200
-let LPaddleSpeed = 5
+let LPaddleSpeed = 20
+let LPaddleYPosition = windowHeight / 2 - LPaddleHeight/2
 
 const ballRadius = 20
-const windowHeight = window.innerHeight
-const windowWidth = window.innerWidth
 
-let LPaddleYPosition = windowHeight / 2 - LPaddleHeight/2
+
+
 
 let ballXPosition = windowWidth/2 - ballRadius
 let ballYPosition = windowHeight/2 - ballRadius
@@ -24,7 +29,7 @@ createLPaddle()
 
 setInterval(moveBall, 1)
 
-document.addEventListener('keyup', (event)=> {
+document.addEventListener('keydown', (event)=> {
     if (event.key == 'w'){
         LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
 
