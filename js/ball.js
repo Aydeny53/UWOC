@@ -1,4 +1,7 @@
 const ball = document.createElement('div')
+document.body.appendChild(ball)
+const LPaddle = document.createElement('div')
+document.body.appendChild(LPaddle)
 const ballRadius = 20
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
