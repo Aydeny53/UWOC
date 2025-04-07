@@ -20,7 +20,14 @@ createLPaddle()
 setInterval(moveBall, 1)
 
 document.addEventListener('keyup', (event)=> {
+    if (event.key == 'w'){
+
+    }
+    if (event.key == 's'){
+        
+    }
     console.log(event.key)
+}
 
 
 function moveBall() {
