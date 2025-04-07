@@ -37,17 +37,18 @@ document.addEventListener('keydown', (event)=> {
         else {
             LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
         }
-        if (LPaddleYPosition >= windowHeight - LPaddleHeight){
-            LPaddleYPosition = windowHeight + LPaddleSpeed
-        }
-        else{
-            LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
-        }
+
 
 
     }
     if (event.key == 's'){
         LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
+        if (LPaddleYPosition >= windowHeight - LPaddleHeight){
+            LPaddleYPosition = windowHeight - LPaddleHeight
+        }
+        else{
+            LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
+        }
     }
     LPaddle.style.top = `${LPaddleYPosition}px`
 })
