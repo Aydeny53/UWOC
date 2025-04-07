@@ -31,11 +31,17 @@ setInterval(moveBall, 1)
 
 document.addEventListener('keydown', (event)=> {
     if (event.key == 'w'){
-        if (LPaddleYPosition < 0){
+        if (LPaddleYPosition <= 0){
             LPaddleYPosition = 0
         }
         else {
             LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
+        }
+        if (LPaddleYPosition >= windowHeight - LPaddleHeight){
+            LPaddleYPosition = windowHeight + LPaddleSpeed
+        }
+        else{
+            LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
         }
 
 
