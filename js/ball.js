@@ -65,6 +65,9 @@ function moveBall() {
     if (ballYPosition < 0 || ballYPosition > windowHeight-ballRadius*2){
         ballYDirection = ballYDirection * -1
     }
+
+    if (ballXPosition >= LPaddle)
+
 }
 
 
@@ -88,3 +91,8 @@ function createLPaddle() {
     LPaddle.style.left = "50px"
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
+
+
+//If top of the ball is less than or equal to the top of the paddle and the
+//bottom of the ball is greater than or equal to the bottom of the paddle and left side of the ball is less
+//than or equal to the right side of the paddle then change ball direction
