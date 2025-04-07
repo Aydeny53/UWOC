@@ -66,7 +66,10 @@ function moveBall() {
         ballYDirection = ballYDirection * -1
     }
 
-    if (ballXPosition >= LPaddle)
+    if (ballYPosition >= LPaddleYPosition && ballXPosition == '50'){
+        ballYDirection = ballYDirection * -1
+        
+    }
 
 }
 
