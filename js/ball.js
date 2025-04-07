@@ -19,7 +19,8 @@ createLPaddle()
 
 setInterval(moveBall, 1)
 
-
+LPaddle.addEventListener('keyup', (event)=> {
+    console.log(event.key)
 
 
 function moveBall() {
