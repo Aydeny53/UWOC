@@ -37,6 +37,8 @@ let ballTop = ballYPosition
 let score = 0 //Display, and increase score by 1 everytime ball hits paddle
 let level = 1 //display level, increase level by 1 everytime score increases by 10
 // As levels increase, increase ballSpeed
+//If ball gets past paddle, end game
+//make ball stop/disappear, let user know game is over
 
 
 
