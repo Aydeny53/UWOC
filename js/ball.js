@@ -7,7 +7,7 @@ document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
 
-let LPaddleWidth = 20
+let LPaddleWidth = 10
 let LPaddleHeight = 200
 let LPaddleSpeed = 20
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight/2
@@ -68,7 +68,7 @@ function moveBall() {
 
     if (ballYPosition >= LPaddleYPosition && ballXPosition == '50'){
         ballYDirection = ballYDirection * -1
-        
+
     }
 
 }
