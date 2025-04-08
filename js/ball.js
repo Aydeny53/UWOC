@@ -13,9 +13,7 @@ let LPaddleSpeed = 20
 let LPaddleXPosition = 70
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight/2
 
-let LPaddleTop = LPaddleYPosition
-let LPaddleBottom = LPaddleYPosition + LPaddleHeight
-let LPaddleRight = LPaddleXPosition + LPaddleWidth
+
 
 const ballRadius = 20
 
@@ -28,9 +26,7 @@ let ballSpeed = 5
 let ballXDirection = 1
 let ballYDirection = 1
 
-let ballLeft = ballXPosition
-let ballBottom = ballYPosition+2 * ballRadius
-let ballTop = ballYPosition
+
 
 
 
@@ -47,12 +43,6 @@ let level = 1 //display level, increase level by 1 everytime score increases by 
 
 createBall()
 createLPaddle()
-
-// setInterval(moveBall, 1)
-
-
-
-
 
 
 
@@ -81,6 +71,8 @@ document.addEventListener('keyup', (event)=> {
 function moveBall() {
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
     ballYPosition = ballYPosition + ballSpeed * ballYDirection
+
+    //must be before if statements
     ball.style.top = `${ballYPosition}px`
     ball.style.left = `${ballXPosition}px`
     if (ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRadius){
@@ -89,6 +81,15 @@ function moveBall() {
     if (ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius){
         ballYDirection = ballYDirection * -1
     }
+
+    //Must be after the if statements
+    let ballLeft = ballXPosition
+    let ballBottom = ballYPosition + 2 * ballRadius
+    let ballTop = ballYPosition
+
+    let LPaddleTop = LPaddleYPosition
+    let LPaddleBottom = LPaddleYPosition + LPaddleHeight
+    let LPaddleRight = LPaddleXPosition + LPaddleWidth
 
     if ((ballBottom >= LPaddleTop) && (ballTop <= LPaddleBottom) && (ballLeft <= LPaddleRight) && (ballXDirection == -1)) {
         ballXDirection = ballXDirection * -1
