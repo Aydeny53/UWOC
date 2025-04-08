@@ -33,10 +33,20 @@ let ballBottom = ballYPosition+2 * ballRadius
 let ballTop = ballYPosition
 
 
+
+
+
+
 createBall()
 createLPaddle()
 
-setInterval(moveBall, 1)
+// setInterval(moveBall, 1)
+
+
+
+
+
+
 
 sKey = false
 wKey = false
@@ -147,6 +157,18 @@ function movePaddle(){
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
+
+
+
+
+
+function animate(){
+    moveBall()
+    movePaddle()
+    requestAnimationFrame(animate) //Everytime pc refreshes, function goes again, 60 times a second/ whatever refresh rate is.
+}
+
+animate()
 
 //If top of the ball is less than or equal to the top of the paddle and the
 //bottom of the ball is greater than or equal to the bottom of the paddle and left side of the ball is less
