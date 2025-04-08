@@ -10,6 +10,7 @@ document.body.appendChild(LPaddle)
 let LPaddleWidth = 10
 let LPaddleHeight = 200
 let LPaddleSpeed = 20
+let LPaddleXPosition = 
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight/2
 
 const ballRadius = 20
@@ -19,7 +20,7 @@ const ballRadius = 20
 
 let ballXPosition = windowWidth/2 - ballRadius
 let ballYPosition = windowHeight/2 - ballRadius
-let ballSpeed = 10
+let ballSpeed = 5
 let ballXDirection = 1
 let ballYDirection = 1
 
