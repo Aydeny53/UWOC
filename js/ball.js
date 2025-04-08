@@ -63,24 +63,24 @@ document.addEventListener('keydown', (event)=> {
         wKey = true
 
 
-        if (LPaddleYPosition <= 0){
-            LPaddleYPosition = 0
-        }
-        else {
-            LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
-        }
+        // if (LPaddleYPosition <= 0){
+        //     LPaddleYPosition = 0
+        // }
+        // else {
+        //     LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
+        // }
     }
     if (event.key == 's'){
         sKey = true
 
 
-        LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
-        if (LPaddleYPosition >= windowHeight - LPaddleHeight){
-            LPaddleYPosition = windowHeight - LPaddleHeight
-        }
-        else{
-            LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
-        }
+        // LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
+        // if (LPaddleYPosition >= windowHeight - LPaddleHeight){
+        //     LPaddleYPosition = windowHeight - LPaddleHeight
+        // }
+        // else{
+        //     LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
+        // }
     }
     LPaddle.style.top = `${LPaddleYPosition}px`
 })
