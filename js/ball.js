@@ -121,15 +121,10 @@ function moveBall() {
         ballYDirection = ballYDirection * -1
     }
 
-    if (
-        ballBottom >= LPaddleTop &&
-        ballTop <= LPaddleBottom &&
-        ballLeft <= LPaddleRight &&
-        ballXDirection == -1
-        ){
-            ballXDirection = ballXDirection * -1
-        }
+    if ((ballBottom >= LPaddleTop) && (ballTop <= LPaddleBottom) && (ballLeft <= LPaddleRight) && (ballXDirection == -1)) {
+        ballXDirection = ballXDirection * -1
     }
+}
 
 
 
