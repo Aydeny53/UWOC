@@ -58,54 +58,23 @@ createLPaddle()
 
 sKey = false
 wKey = false
+
 document.addEventListener('keydown', (event)=> {
     if (event.key == 'w'){
         wKey = true
-
-
-        // if (LPaddleYPosition <= 0){
-        //     LPaddleYPosition = 0
-        // }
-        // else {
-        //     LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
-        // }
     }
     if (event.key == 's'){
         sKey = true
-
-
-        // LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
-        // if (LPaddleYPosition >= windowHeight - LPaddleHeight){
-        //     LPaddleYPosition = windowHeight - LPaddleHeight
-        // }
-        // else{
-        //     LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
-        // }
     }
-    LPaddle.style.top = `${LPaddleYPosition}px`
 })
 
 document.addEventListener('keyup', (event)=> {
     if (event.key == 'w'){
         wKey = false
-        // if (LPaddleYPosition <= 0){
-        //     LPaddleYPosition = 0
-        // }
-        // else {
-        //     LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
-        // }
     }
     if (event.key == 's'){
         sKey = false
-        // LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
-        // if (LPaddleYPosition >= windowHeight - LPaddleHeight){
-        //     LPaddleYPosition = windowHeight - LPaddleHeight
-        // }
-        // else{
-        //     LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
-        // }
     }
-    LPaddle.style.top = `${LPaddleYPosition}px`
 })
 
 
