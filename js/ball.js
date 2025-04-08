@@ -10,8 +10,12 @@ document.body.appendChild(LPaddle)
 let LPaddleWidth = 10
 let LPaddleHeight = 200
 let LPaddleSpeed = 20
-let LPaddleXPosition = 
+let LPaddleXPosition = 50
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight/2
+
+let LPaddleTop = LPaddleYPosition
+let LPaddleBottom = LPaddleYPosition + LPaddleHeight
+let LPaddleRight = LPaddleXPosition + LPaddleWidth
 
 const ballRadius = 20
 
@@ -24,25 +28,34 @@ let ballSpeed = 5
 let ballXDirection = 1
 let ballYDirection = 1
 
+let ballLeft = ballXPosition
+let ballBottom = ballYPosition+2 * ballRadius
+let ballTop = ballYPosition
+
 
 createBall()
 createLPaddle()
 
 setInterval(moveBall, 1)
 
+sKey = false
+wKey = false
 document.addEventListener('keydown', (event)=> {
     if (event.key == 'w'){
+        wKey = true
+
+
         if (LPaddleYPosition <= 0){
             LPaddleYPosition = 0
         }
         else {
             LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
         }
-
-
-
     }
     if (event.key == 's'){
+        sKey = true
+
+
         LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
         if (LPaddleYPosition >= windowHeight - LPaddleHeight){
             LPaddleYPosition = windowHeight - LPaddleHeight
@@ -50,6 +63,29 @@ document.addEventListener('keydown', (event)=> {
         else{
             LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
         }
+    }
+    LPaddle.style.top = `${LPaddleYPosition}px`
+})
+
+document.addEventListener('keyup', (event)=> {
+    if (event.key == 'w'){
+        wKey = false
+        // if (LPaddleYPosition <= 0){
+        //     LPaddleYPosition = 0
+        // }
+        // else {
+        //     LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
+        // }
+    }
+    if (event.key == 's'){
+        sKey = false
+        // LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
+        // if (LPaddleYPosition >= windowHeight - LPaddleHeight){
+        //     LPaddleYPosition = windowHeight - LPaddleHeight
+        // }
+        // else{
+        //     LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
+        // }
     }
     LPaddle.style.top = `${LPaddleYPosition}px`
 })
@@ -67,12 +103,17 @@ function moveBall() {
         ballYDirection = ballYDirection * -1
     }
 
-    if (ballYPosition >= LPaddleYPosition && ballXPosition == '50'){
-        ballYDirection = ballYDirection * -1
-
+    if (
+        (ballBottom >= LPaddleTop) &&
+        (ballTop <= LPaddleBottom) &&
+        (ballLeft <= LPaddleRight) &&
+        (ballXDirection == -1)
+        ){
+            ballXDirection = ballXDirection * -1
+        }
     }
 
-}
+
 
 
 function createBall() {
@@ -92,7 +133,17 @@ function createLPaddle() {
     LPaddle.style.width = `${LPaddleWidth}px`
     LPaddle.style.backgroundColor = 'blue'
     LPaddle.style.position = 'absolute'
-    LPaddle.style.left = "50px"
+    LPaddle.style.left = `${LPaddleXPosition}px`
+    LPaddle.style.top = `${LPaddleYPosition}px`
+}
+
+function movePaddle(){
+    if (wKey == true && LPaddleYPosition > 0) {
+        LPaddleYPosition = LPaddleYPosition -LPaddleSpeed
+    }
+    if (sKey == true && LPaddleYPosition < windowHeight - LPaddleHeight){
+        LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
+    }
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
