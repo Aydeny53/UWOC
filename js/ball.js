@@ -34,6 +34,10 @@ let ballTop = ballYPosition
 
 
 
+let score = 0 //Display, and increase score by 1 everytime ball hits paddle
+let level = 1 //display level, increase level by 1 everytime score increases by 10
+
+
 
 
 
@@ -114,10 +118,10 @@ function moveBall() {
     }
 
     if (
-        (ballBottom >= LPaddleTop) &&
-        (ballTop <= LPaddleBottom) &&
-        (ballLeft <= LPaddleRight) &&
-        (ballXDirection == -1)
+        ballBottom >= LPaddleTop &&
+        ballTop <= LPaddleBottom &&
+        ballLeft <= LPaddleRight &&
+        ballXDirection == -1
         ){
             ballXDirection = ballXDirection * -1
         }
