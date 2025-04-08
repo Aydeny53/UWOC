@@ -39,6 +39,7 @@ let level = 1 //display level, increase level by 1 everytime score increases by 
 // As levels increase, increase ballSpeed
 //If ball gets past paddle, end game
 //make ball stop/disappear, let user know game is over
+//optional: sound effects, background music, 
 
 
 
