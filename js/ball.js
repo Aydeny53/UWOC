@@ -10,7 +10,7 @@ document.body.appendChild(LPaddle)
 let LPaddleWidth = 10
 let LPaddleHeight = 200
 let LPaddleSpeed = 20
-let LPaddleXPosition = 50
+let LPaddleXPosition = 70
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight/2
 
 let LPaddleTop = LPaddleYPosition
@@ -39,7 +39,7 @@ let level = 1 //display level, increase level by 1 everytime score increases by 
 // As levels increase, increase ballSpeed
 //If ball gets past paddle, end game
 //make ball stop/disappear, let user know game is over
-//optional: sound effects, background music, 
+//optional: sound effects, background music,
 
 
 
