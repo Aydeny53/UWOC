@@ -274,6 +274,7 @@ function createEndScreen(){
     gameOver.style.position = "absolute"
     gameOver.style.left = "0"
     gameOver.style.top = "0"
+    gameOver.style.transition = "ease 3s"
 }
 
 
@@ -303,7 +304,7 @@ function increaseLevel(){
 
 
 function animate(){
-    while(playing == "true"){
+    if(playing == true){
         moveBall()
         movePaddle()
         requestAnimationFrame(animate) //Everytime pc refreshes, function goes again, 60 times a second/ whatever refresh rate is.
