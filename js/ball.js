@@ -242,6 +242,7 @@ function endGame(){
     }
     if (hearts == 0){
         life3.style.backgroundColor = "#661313"
+        gameOver.style.zIndex = "100"
         gameOver.style.opacity = "0.7"
         ballSpeed = 0
         LPaddleSpeed = 0
@@ -268,6 +269,9 @@ function createEndScreen(){
     gameOver.style.backgroundColor = "black"
     gameOver.style.height = "100%"
     gameOver.style.width = "100%"
+    gameOver.style.position = "absolute"
+    gameOver.style.left = "0"
+    gameOver.style.top = "0"
 }
 
 
