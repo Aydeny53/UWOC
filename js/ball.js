@@ -47,7 +47,7 @@ let ballYDirection = 1
 let seconds = 1
 let hearts = 3
 
-let playing = true
+playing = true
 let score2 = 0 //Display, and increase score by 1 everytime ball hits paddle
 let level2 = 1 //display level, increase level by 1 everytime score increases by 10
 // As levels increase, increase ballSpeed
@@ -303,11 +303,14 @@ function increaseLevel(){
 
 
 function animate(){
-    while(playing){
+    while(playing == "true"){
         moveBall()
         movePaddle()
         requestAnimationFrame(animate) //Everytime pc refreshes, function goes again, 60 times a second/ whatever refresh rate is.
     }
+    // moveBall()
+    // movePaddle()
+    // requestAnimationFrame(animate)
 }
 
 
