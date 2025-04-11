@@ -112,6 +112,9 @@ function moveBall() {
     let LPaddleTop = LPaddleYPosition
     let LPaddleBottom = LPaddleYPosition + LPaddleHeight
     let LPaddleRight = LPaddleXPosition + LPaddleWidth
+    if(ballTop == '0' || ballBottom == '0' || ballLeft == '0'){
+        endGame()
+    }
 
 
     if ((ballBottom >= LPaddleTop) && (ballTop <= LPaddleBottom) && (ballLeft <= LPaddleRight) && (ballXDirection == -1)) {
@@ -128,11 +131,6 @@ function moveBall() {
             increaseLevel()
         }
         increaseScore()
-        if (ballTop == '0'){
-            endGame()
-        }
-
-
     }
 
 
@@ -234,7 +232,10 @@ function createLives(){
 function endGame(){
     hearts = hearts - 1
     if (hearts == 2){
-        life2.style.backgroundColor = '#661313'
+        life2.style.backgroundColor = "#661313"
+    }
+    if (hearts == 1){
+        life1.style.backgroundColor = "#661313"
     }
 
 }
