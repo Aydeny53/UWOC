@@ -165,7 +165,7 @@ function createLPaddle() {
     LPaddle.style.position = 'absolute'
     LPaddle.style.left = `${LPaddleXPosition}px`
     LPaddle.style.top = `${LPaddleYPosition}px`
-    LPaddle.style.overFlow = "hidden"
+    LPaddle.style.overFlow = 'hidden'
 }
 
 
@@ -266,10 +266,10 @@ function endGame(){
 
 
 function movePaddle(){
-    if (wKey == true && LPaddleYPosition > 0) {
+    if (wKey == true && LPaddleYPosition > 0 ) {
         LPaddleYPosition = LPaddleYPosition -LPaddleSpeed
     }
-    if (sKey == true && LPaddleYPosition < windowHeight - LPaddleHeight){
+    if (sKey == true && LPaddleYPosition < windowHeight - LPaddleHeight - 3.5){
         LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
     }
     LPaddle.style.top = `${LPaddleYPosition}px`
