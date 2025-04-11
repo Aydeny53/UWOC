@@ -20,6 +20,8 @@ const life2 = document.createElement('div.lives')
 document.body.appendChild(life2)
 const life3 = document.createElement('div.lives')
 document.body.appendChild(life3)
+const gameOver = document.createElement('div')
+    document.body.appendChild(gameOver)
 
 let LPaddleWidth = 15
 let LPaddleHeight = 200
@@ -62,6 +64,7 @@ createTime()
 createScore()
 createLevel()
 createLives()
+createEndScreen()
 setInterval(increaseTime, 1000)
 
 
@@ -112,7 +115,7 @@ function moveBall() {
     let LPaddleTop = LPaddleYPosition
     let LPaddleBottom = LPaddleYPosition + LPaddleHeight
     let LPaddleRight = LPaddleXPosition + LPaddleWidth
-    if(ballTop == '0' || ballBottom == '0' || ballLeft == '0'){
+    if (ballLeft - 1 <= '0'){
         endGame()
     }
 
@@ -237,6 +240,12 @@ function endGame(){
     if (hearts == 1){
         life1.style.backgroundColor = "#661313"
     }
+    if (hearts == 0){
+        life3.style.backgroundColor = "#661313"
+        gameOver.style.opacity = "0.7"
+        ballSpeed = 0
+
+    }
 
 }
 
@@ -253,6 +262,12 @@ function movePaddle(){
 }
 
 
+function createEndScreen(){
+    gameOver.style.opacity = "0"
+    gameOver.style.backgroundColor = "black"
+    gameOver.style.height = "100%"
+    gameOver.style.width = "100%"
+}
 
 
 
