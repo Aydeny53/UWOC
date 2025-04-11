@@ -286,6 +286,7 @@ function createEndScreen(){
     gameOverText.style.left = "50%"
     gameOverText.style.top = "250px"
     gameOverText.innerHTML = "Game Over"
+    gameOverText.fontSize = ""
     gameOverText.style.color = "white"
 }
 
