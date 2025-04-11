@@ -281,13 +281,15 @@ function createEndScreen(){
     gameOver.style.top = "0"
     gameOver.style.transition = "ease 3s"
 
+    gameOverText.style.position = "absolute"
     gameOverText.style.opacity = "0"
     gameOverText.style.backgroundColor = "transparent"
-    gameOverText.style.left = "50%"
+    gameOverText.style.left = ""
     gameOverText.style.top = "250px"
     gameOverText.innerHTML = "Game Over"
-    gameOverText.fontSize = ""
+    gameOverText.style.fontSize = "100px"
     gameOverText.style.color = "white"
+
 }
 
 
