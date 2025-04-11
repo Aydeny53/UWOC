@@ -21,7 +21,9 @@ document.body.appendChild(life2)
 const life3 = document.createElement('div.lives')
 document.body.appendChild(life3)
 const gameOver = document.createElement('div')
-    document.body.appendChild(gameOver)
+document.body.appendChild(gameOver)
+const gameOverText = document.createElement('div')
+document.body.appendChild(gameOverText)
 
 let LPaddleWidth = 15
 let LPaddleHeight = 200
@@ -245,6 +247,9 @@ function endGame(){
         life3.style.backgroundColor = "#661313"
         gameOver.style.zIndex = "100"
         gameOver.style.opacity = "0.7"
+
+        gameOverText.style.opacity = "1"
+        gameOverText.style.zIndex = "101"
         ballSpeed = 0
         LPaddleSpeed = 0
         playing = false
@@ -275,6 +280,13 @@ function createEndScreen(){
     gameOver.style.left = "0"
     gameOver.style.top = "0"
     gameOver.style.transition = "ease 3s"
+
+    gameOverText.style.opacity = "0"
+    gameOverText.style.backgroundColor = "transparent"
+    gameOverText.style.left = "50%"
+    gameOverText.style.top = "250px"
+    gameOverText.innerHTML = "Game Over"
+    gameOverText.style.color = "white"
 }
 
 
