@@ -219,18 +219,21 @@ function createLives(){
     life1.style.backgroundColor = "Red"
     life1.style.left = `${windowWidth/2 -life1Width}px`
     life1.style.bottom = '20px'
+    life1.style.transition = "ease 3s"
 
     life2.style.width = `${life2Width}px`
     life2.style.height = `${life2Height}px`
     life2.style.backgroundColor = "Red"
     life2.style.left = `${windowWidth/2 -life2Width - 45}px`
     life2.style.bottom = '20px'
+    life2.style.transition = "ease 3s"
 
     life3.style.width = `${life3Width}px`
     life3.style.height = `${life3Height}px`
     life3.style.backgroundColor = "Red"
     life3.style.left = `${windowWidth/2 -life3Width + 45}px`
     life3.style.bottom = '20px'
+    life3.style.transition = "ease 3s"
 
 }
 
