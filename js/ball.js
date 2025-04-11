@@ -154,6 +154,7 @@ function createBall() {
     ball.style.position = "absolute"
     ball.style.top = `${windowHeight/2 - ballRadius}px`
     ball.style.left = `${ballXPosition}px` //MAKES IT ACTUALLY CENTERED
+    ball.style.overflowY = "hidden"
 }
 
 
@@ -164,6 +165,7 @@ function createLPaddle() {
     LPaddle.style.position = 'absolute'
     LPaddle.style.left = `${LPaddleXPosition}px`
     LPaddle.style.top = `${LPaddleYPosition}px`
+    LPaddle.style.overFlow = "hidden"
 }
 
 
