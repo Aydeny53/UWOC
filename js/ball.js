@@ -244,6 +244,7 @@ function endGame(){
         life3.style.backgroundColor = "#661313"
         gameOver.style.opacity = "0.7"
         ballSpeed = 0
+        LPaddleSpeed = 0
 
     }
 
