@@ -51,7 +51,8 @@ let RPaddleXPosition = 250
 let RPaddleYPosition = windowHeight / 2 - RPaddleHeight/2
 
 
-
+const littleDudeWidth = windowWidth - (windowWidth - RPaddleXPosition)
+const littleDudeHeight = 80
 const ballRadius = 20
 
 
@@ -62,6 +63,8 @@ let ballYPosition = windowHeight/2 - ballRadius
 let ballSpeed = 10
 let ballXDirection = 1
 let ballYDirection = 1
+
+let littleDudeYPosition = ballYPosition
 
 
 
@@ -127,6 +130,14 @@ function moveBall() {
     ball.style.left = `${ballXPosition}px`
     moveRPaddle()
     moveLittleDude()
+
+    if (RPaddleYPosition % '300' > '150' || RPaddleYPosition < 10 ){
+        littleDude.src = "images/littleDude2.png"
+    }
+    else{
+        littleDude.src = "images/littleDude.png"
+    }
+
     if (ballXPosition <= 0 || ballXPosition >= windowWidth - 2 * ballRadius){
         ballXDirection = ballXDirection * -1
     }
@@ -345,7 +356,11 @@ function moveRPaddle(){
 }
 
 function moveLittleDude(){
-    littleDude.style.top = `${ballYPosition}px`
+    littleDudeYPosition = ballYPosition
+    if (littleDudeYPosition + littleDudeHeight > windowHeight){
+        littleDudeYPosition = windowHeight - littleDudeHeight
+    }
+    littleDude.style.top = `${littleDudeYPosition}px`
 }
 
 
@@ -398,15 +413,16 @@ function increaseLevel(){
     level.innerHTML = `Level:${level2}`
 }
 
-const littleDudeWidth = 12
+// `${littleDudeWidth}px`
+
 
 function createLittleDude(){
     littleDude.style.position = "absolute"
     littleDude.style.zIndex = -100
-    littleDude.style.right = '100px'
+    littleDude.style.right = '30px'
     littleDude.style.backgroundColor = "white"
-    littleDude.style.width = '150px'
-    littleDude.style.height = '100px'
+    littleDude.style.width = '200px'
+    littleDude.style.height = `${littleDudeHeight}px`
     // littleDude.src = '../images/littleDude.png'
 }
 
