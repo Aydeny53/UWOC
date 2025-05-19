@@ -6,7 +6,20 @@ const ball = document.createElement('div')
 document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
+const RPaddle = document.createElement('div')
+document.body.appendChild(RPaddle)
 
+const littleDude = document.getElementById('little1')
+
+// littleDude.src = "../images/littleDude.png"
+
+// document.body.appendChild(littleDude)
+
+
+
+
+
+const run = false
 
 const time = document.createElement('div')
 document.body.appendChild(time)
@@ -30,6 +43,12 @@ let LPaddleHeight = 200
 let LPaddleSpeed = 20
 let LPaddleXPosition = 70
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight/2
+
+let RPaddleWidth = 15
+let RPaddleHeight = 150
+let RPaddleSpeed = 20
+let RPaddleXPosition = 250
+let RPaddleYPosition = windowHeight / 2 - RPaddleHeight/2
 
 
 
@@ -63,12 +82,15 @@ let level2 = 1 //display level, increase level by 1 everytime score increases by
 
 createBall()
 createLPaddle()
-createTime()
+createRPaddle()
+// createTime()
 createScore()
 createLevel()
 createLives()
 createEndScreen()
-setInterval(increaseTime, 1000)
+createLittleDude()
+// setInterval(increaseTime, 1000)
+// setInterval( , 750)
 
 
 
@@ -103,21 +125,28 @@ function moveBall() {
     //must be before if statements
     ball.style.top = `${ballYPosition}px`
     ball.style.left = `${ballXPosition}px`
-    if (ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRadius){
+    moveRPaddle()
+    moveLittleDude()
+    if (ballXPosition <= 0 || ballXPosition >= windowWidth - 2 * ballRadius){
         ballXDirection = ballXDirection * -1
     }
-    if (ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius){
+    if (ballYPosition <= 0 || ballYPosition >= windowHeight - 2 * ballRadius){
         ballYDirection = ballYDirection * -1
     }
 
     //Must be after the if statements
     let ballLeft = ballXPosition
+    let ballRight = ballXPosition + 2 * ballRadius
     let ballBottom = ballYPosition + 2 * ballRadius
     let ballTop = ballYPosition
 
     let LPaddleTop = LPaddleYPosition
     let LPaddleBottom = LPaddleYPosition + LPaddleHeight
     let LPaddleRight = LPaddleXPosition + LPaddleWidth
+
+    let RPaddleTop = RPaddleYPosition
+    let RPaddleBottom = RPaddleYPosition + RPaddleHeight
+    let RPaddleLeft = RPaddleXPosition - RPaddleWidth
     if (ballLeft - 1 <= '0'){
         endGame()
     }
@@ -125,9 +154,6 @@ function moveBall() {
 
     if ((ballBottom >= LPaddleTop) && (ballTop <= LPaddleBottom) && (ballLeft <= LPaddleRight) && (ballXDirection == -1)) {
         ballXDirection = ballXDirection * -1
-
-        // level2 = level2 + levelRounding
-        // increaseLevel()
 
         if (score2 == 10){
 
@@ -137,6 +163,11 @@ function moveBall() {
             increaseLevel()
         }
         increaseScore()
+    }
+
+    if ((ballBottom >= RPaddleTop) && (ballTop <= RPaddleBottom) &&
+    (ballRight >=  windowWidth - (RPaddleLeft + RPaddleWidth * 2)) && (ballXDirection == 1)) {
+        ballXDirection = ballXDirection * -1
     }
 
 
@@ -165,7 +196,17 @@ function createLPaddle() {
     LPaddle.style.position = 'absolute'
     LPaddle.style.left = `${LPaddleXPosition}px`
     LPaddle.style.top = `${LPaddleYPosition}px`
-    LPaddle.style.overFlow = 'hidden'
+    LPaddle.style.overflow = 'hidden'
+}
+
+function createRPaddle(){
+    RPaddle.style.height = `${RPaddleHeight}px`
+    RPaddle.style.width = `${RPaddleWidth}px`
+    RPaddle.style.backgroundColor = 'blue'
+    RPaddle.style.position = 'absolute'
+    RPaddle.style.right = `${RPaddleXPosition}px`
+    RPaddle.style.top = `${RPaddleYPosition}px`
+    RPaddle.style.overflow = 'hidden'
 }
 
 
@@ -275,6 +316,38 @@ function movePaddle(){
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
+function moveRPaddle(){
+
+
+    if(RPaddleYPosition >= 0){
+        RPaddleYPosition = ballYPosition - RPaddleSpeed * 3
+    }
+
+    if( RPaddleYPosition < 0){
+        RPaddleYPosition = 1
+    }
+
+
+
+    if (ballSpeed > RPaddleSpeed){
+        RPaddleYPosition = ballYPosition + 25
+    }
+        if (RPaddleYPosition + RPaddleHeight > windowHeight){
+        RPaddleYPosition = windowHeight - RPaddleHeight
+    }
+
+
+
+
+
+
+    RPaddle.style.top = `${RPaddleYPosition}px`
+}
+
+function moveLittleDude(){
+    littleDude.style.top = `${ballYPosition}px`
+}
+
 
 function createEndScreen(){
     gameOver.style.opacity = "0"
@@ -325,6 +398,25 @@ function increaseLevel(){
     level.innerHTML = `Level:${level2}`
 }
 
+const littleDudeWidth = 12
+
+function createLittleDude(){
+    littleDude.style.position = "absolute"
+    littleDude.style.zIndex = -100
+    littleDude.style.right = '100px'
+    littleDude.style.backgroundColor = "white"
+    littleDude.style.width = '150px'
+    littleDude.style.height = '100px'
+    // littleDude.src = '../images/littleDude.png'
+}
+
+
+// function running(){
+
+//     if(run){
+//         littleDude.src
+//     }
+// }
 
 function animate(){
     if(playing == true){
@@ -348,3 +440,4 @@ animate()
 //If top of the ball is less than or equal to the top of the paddle and the
 //bottom of the ball is greater than or equal to the bottom of the paddle and left side of the ball is less
 //than or equal to the right side of the paddle then change ball direction
+

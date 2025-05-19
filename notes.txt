@@ -24,7 +24,7 @@ display: flex lets you center items
 
 
 
-alt + z : Makes it so text doesnt run off sides of coding screen
+***alt + z : Makes it so text doesnt run off sides of coding screen
 
 
 font-family: inherit;  = Makes whatever inside button use font of whatever rest of website is using
