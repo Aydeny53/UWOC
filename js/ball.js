@@ -8,8 +8,14 @@ const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
 const RPaddle = document.createElement('div')
 document.body.appendChild(RPaddle)
+// const playAgain = document.createElement('button')
+// playAgain.innerHTML = "Click Me"
+// playAgain.onclick = function(){
+//     alert("Hello world")
+// }
+// document.body.appendChild(playAgain)
 
-const littleDude = document.getElementById('little1')
+const littleDude = document.querySelector('.little1')
 
 // littleDude.src = "../images/littleDude.png"
 
@@ -92,8 +98,13 @@ createLevel()
 createLives()
 createEndScreen()
 createLittleDude()
+// createPlayAgain()
 // setInterval(increaseTime, 1000)
-// setInterval( , 750)
+
+if (level2 == '1'){
+    var easy = setInterval(littleDudeAnim, 100)
+}
+
 
 
 
@@ -131,12 +142,18 @@ function moveBall() {
     moveRPaddle()
     moveLittleDude()
 
-    if (RPaddleYPosition % '300' > '150' || RPaddleYPosition < 10 ){
-        littleDude.src = "images/littleDude2.png"
-    }
-    else{
-        littleDude.src = "images/littleDude.png"
-    }
+
+
+
+    // if (RPaddleYPosition % '300' > '150' || RPaddleYPosition < 10 ){
+    //     littleDude.src = "images/littleDude2.png"
+    // }
+    // else{
+    //     littleDude.src = "images/littleDude.png"
+    // }
+    // if (RPaddleYPosition >= windowHeight - RPaddleYPosition +155){
+    //     littleDude.src = "images/littleDude2.png"
+    // }
 
     if (ballXPosition <= 0 || ballXPosition >= windowWidth - 2 * ballRadius){
         ballXDirection = ballXDirection * -1
@@ -172,8 +189,21 @@ function moveBall() {
 
             ballSpeed = ballSpeed + (level2 * 2)
             increaseLevel()
+            LPaddleHeight = LPaddleHeight - 35 // IT DOESNT SHRINK THE VIEW MODEL MAYBE CALL FUNCTION AGAIN??????
+            LPaddle.remove()
+
+            if (level2 == '2'){
+                clearInterval(easy)
+                var mid = setInterval(littleDudeAnim, 50)
+            }
+            else if (level2 == '3'){
+                clearInterval(mid)
+                var high = setInterval(littleDudeAnim, 35)
+            }
+
         }
         increaseScore()
+
     }
 
     if ((ballBottom >= RPaddleTop) && (ballTop <= RPaddleBottom) &&
@@ -196,7 +226,7 @@ function createBall() {
     ball.style.position = "absolute"
     ball.style.top = `${windowHeight/2 - ballRadius}px`
     ball.style.left = `${ballXPosition}px` //MAKES IT ACTUALLY CENTERED
-    ball.style.overflowY = "hidden"
+    ball.style.overflow = 'hidden'
 }
 
 
@@ -291,6 +321,14 @@ function createLives(){
 
 }
 
+// function createPlayAgain(){
+//     playAgain.style.position = 'absolute'
+//     playAgain.style.opacity = 0
+//     playAgain.style.height = '100px'
+//     playAgain.style.width = '200px'
+//     playAgain.style.left = 50%
+// }
+
 
 function endGame(){
     hearts = hearts - 1
@@ -307,8 +345,8 @@ function endGame(){
 
         gameOverText.style.opacity = "1"
         gameOverText.style.zIndex = "101"
-        ballSpeed = 0
-        LPaddleSpeed = 0
+        // ballSpeed = 0
+        // LPaddleSpeed = 0
         playing = false
 
     }
@@ -356,7 +394,7 @@ function moveRPaddle(){
 }
 
 function moveLittleDude(){
-    littleDudeYPosition = ballYPosition
+    littleDudeYPosition = RPaddleYPosition + RPaddleHeight/4
     if (littleDudeYPosition + littleDudeHeight > windowHeight){
         littleDudeYPosition = windowHeight - littleDudeHeight
     }
@@ -456,4 +494,15 @@ animate()
 //If top of the ball is less than or equal to the top of the paddle and the
 //bottom of the ball is greater than or equal to the bottom of the paddle and left side of the ball is less
 //than or equal to the right side of the paddle then change ball direction
+let count = 0
+function littleDudeAnim(){
+    count = count + 1
+    if (count % 10 >= 5){
+        littleDude.src = "images/littleDude2.png"
+    }
+    else {
+        littleDude.src = "images/littleDude.png"
+    }
+    // littleDude.classList.toggle('active')
 
+}
