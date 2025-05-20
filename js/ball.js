@@ -191,6 +191,7 @@ function moveBall() {
             increaseLevel()
             LPaddleHeight = LPaddleHeight - 35 // IT DOESNT SHRINK THE VIEW MODEL MAYBE CALL FUNCTION AGAIN??????
             LPaddle.remove()
+            createLPaddle()
 
             if (level2 == '2'){
                 clearInterval(easy)
