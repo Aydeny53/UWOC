@@ -380,8 +380,8 @@ function moveRPaddle(){
 
 
 
-    if (ballSpeed > RPaddleSpeed){
-        RPaddleYPosition = ballYPosition + 25
+    if (level2 == '4'){
+        RPaddleYPosition = ballYPosition + 55
     }
         if (RPaddleYPosition + RPaddleHeight > windowHeight){
         RPaddleYPosition = windowHeight - RPaddleHeight
