@@ -385,6 +385,7 @@ function moveRPaddle(){
         RPaddleYPosition = ballYPosition + 55
         if (ballXPosition == windowWidth - ballRadius){
             ballSpeed = 0
+            playing = false
         }
     }
         if (RPaddleYPosition + RPaddleHeight > windowHeight){
