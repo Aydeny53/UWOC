@@ -58,7 +58,7 @@ let RPaddleYPosition = windowHeight / 2 - RPaddleHeight/2
 
 
 const littleDudeWidth = windowWidth - (windowWidth - RPaddleXPosition)
-const littleDudeHeight = 80
+const littleDudeHeight = 110
 const ballRadius = 20
 
 
@@ -457,9 +457,9 @@ function increaseLevel(){
 function createLittleDude(){
     littleDude.style.position = "absolute"
     littleDude.style.zIndex = -100
-    littleDude.style.right = '30px'
+    littleDude.style.right = '0px'
     littleDude.style.backgroundColor = "white"
-    littleDude.style.width = '200px'
+    littleDude.style.width = '250px'
     littleDude.style.height = `${littleDudeHeight}px`
     // littleDude.src = '../images/littleDude.png'
 }
