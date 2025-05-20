@@ -380,7 +380,7 @@ function moveRPaddle(){
 
 
 
-    if (level2 == '5'){
+    if (level2 == '4' && score2 == 5){
         RPaddleYPosition = ballYPosition + 55
         if (ballXPosition == windowWidth - ballRadius){
             ballSpeed = 0
