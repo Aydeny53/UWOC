@@ -61,7 +61,7 @@ const littleDudeWidth = windowWidth - (windowWidth - RPaddleXPosition)
 const littleDudeHeight = 110
 const ballRadius = 20
 
-let randomNum = (int)(Math.random() * 5)
+let randomNum = Math.random() * 5
 
 
 
@@ -381,7 +381,7 @@ function moveRPaddle(){
 
 
 
-    if (level2 == '4' && score2 == 5){
+    if (level2 == '4' && score2 == randomNum + 3){
         RPaddleYPosition = ballYPosition + 55
         if (ballXPosition == windowWidth - ballRadius){
             ballSpeed = 0
