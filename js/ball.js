@@ -382,11 +382,11 @@ function moveRPaddle(){
 
 
     if (level2 == '1' && score2 == randomNum + 2){
-        if (ballYDirection <= 0){
+        if (ballYDirection < 0){
             RPaddleYPosition = ballYPosition + 150
         }
-        if (ballYDirection >= 0){
-            RPaddleYPosition = ballYPosition - RPaddleHeight - 150
+        if (ballYDirection > 0){
+            RPaddleYPosition = ballYPosition - (RPaddleHeight + 150)
         }
 
         if (ballXPosition >= windowWidth - ballRadius + 5){
