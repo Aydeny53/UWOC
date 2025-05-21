@@ -385,7 +385,7 @@ function moveRPaddle(){
         if (ballYDirection < 0){
             RPaddleYPosition = ballYPosition + 150
         }
-        if (ballYDirection > 0){
+        if else(ballYDirection > 0){
             RPaddleYPosition = ballYPosition - (RPaddleHeight + 150)
         }
 
