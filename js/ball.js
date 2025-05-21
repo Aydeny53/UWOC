@@ -61,7 +61,9 @@ const littleDudeWidth = windowWidth - (windowWidth - RPaddleXPosition)
 const littleDudeHeight = 110
 const ballRadius = 20
 
-let randomNum = Math.random() * 5
+let random = Math.random() * 5
+
+let randomNum = Math.ceil(random)
 
 
 
