@@ -70,6 +70,10 @@ function createBox(item){
     box.addEventListener('click', ()=>{
         setTextMessage(item.text)
         speakText()
+
+        box.classList.add('active')
+        setTimeout(box.classList.remove('active') ,800)
+
     })
 
     main.appendChild(box)
