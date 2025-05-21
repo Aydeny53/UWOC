@@ -72,7 +72,7 @@ function createBox(item){
         speakText()
 
         box.classList.add('active')
-        setTimeout(box.classList.remove('active') ,800)
+        setTimeout(()=>box.classList.remove('active') ,800)
 
     })
 
@@ -130,3 +130,9 @@ function setVoice(e){
     message.voice = voices.find(voice => voice.name === e.target.value)
 }
 getVoices()
+
+
+readBtn.addEventListener('click', ()=> {
+    setTextMessage(textArea.value)
+    speakText()
+})
