@@ -63,7 +63,7 @@ const ballRadius = 20
 
 let random = Math.random() * 5
 
-let randomNum = Math.ceil(random)
+let randomNum = Math.ceil(random) + 2
 console.log(randomNum)
 
 
