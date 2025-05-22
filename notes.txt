@@ -32,7 +32,7 @@ The Prankster
 The Dumb
 
 
-*****  emmet - VERY IMPORTANT!!! THIS LETS YOU USE USE TAB TO FILL IN STUFF WHEN HITTING TAB!!! TOGGLE IN SETTINGS!!!
+*****  emmet - (Trigger expansion on tab) - VERY IMPORTANT!!! THIS LETS YOU USE USE TAB TO FILL IN STUFF WHEN HITTING TAB!!! TOGGLE IN SETTINGS!!!
 
 
 seal = always round up
