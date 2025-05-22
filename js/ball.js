@@ -384,6 +384,7 @@ function moveRPaddle(){
 
 
     if (level2 == '1' && score2 == randomNum + '2'){
+        playing = false
         if (ballYDirection < 0){
             RPaddleYPosition = ballYPosition + 150
         }
