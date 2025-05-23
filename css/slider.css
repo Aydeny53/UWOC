@@ -28,3 +28,8 @@ body {
     left: 0;
     transition: transform .5s ease-in-out;
 }
+
+.left-side > div{
+    height: 100%;
+    width: 100%;
+}
