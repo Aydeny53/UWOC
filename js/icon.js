@@ -59,6 +59,7 @@ btn.addEventListener('click', ()=> {
 
     picture.src = `${table[total].image}`
     table[total].image = "none"
+    
 
 
 
