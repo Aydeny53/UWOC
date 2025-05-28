@@ -5,5 +5,8 @@ const SQUARES = 500
 for(let i = 0; i < SQUARES; i = i+1){
     const square = document.createElement('div')
     square.classList.add('square')
+    square.addEventListener('mouseover', ()=> setColor(square))
     container.appendChild(square)
 }
+
+function setColor

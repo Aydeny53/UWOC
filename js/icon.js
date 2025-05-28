@@ -20,6 +20,9 @@ const table = [
         image: 'images/Milly.png',
         text: "I'm Thirsty"
     }
+    {
+        image: 'images/Milly.png',
+    }
 ]
 console.log(randNum)
 
