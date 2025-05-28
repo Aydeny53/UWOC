@@ -39,7 +39,8 @@ btn.addEventListener('click', ()=> {
         stopper = stopper + 1
         randNum = Math.random() * 3
         total = Math.floor(randNum)
-        if (stopper == 100){
+        console.log(randNum)
+        if (stopper == 20){
             stopLoop = -100
         }
     }
