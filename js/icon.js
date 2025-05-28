@@ -7,6 +7,7 @@ let total = 0
 let holder =0
 let randNum = -1
 let stopper = -10
+let stopLoop = 0
 const table = [
     {
         image: 'images/Full.png',
@@ -30,10 +31,16 @@ btn.addEventListener('click', ()=> {
     randNum = Math.random() * 3
     total = Math.floor(randNum)
 
-    while (holder == total || table[total].image == "none"){
-    randNum = Math.random() * 3
-    total = Math.floor(randNum)
+    while (holder == total || table[total].image == "none" || stopLoop == -100){
+        stopper = stopper + 1
+        randNum = Math.random() * 3
+        total = Math.floor(randNum)
+        if (stopper == 100){
+            stopLoop = -100
+        }
     }
+    
+    stopper = -10
 
     holder = total
 
