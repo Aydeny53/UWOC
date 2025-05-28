@@ -6,6 +6,7 @@ let number = 1
 let total = 0
 let holder =0
 let randNum = -1
+let stopper = -10
 const table = [
     {
         image: 'images/Full.png',
