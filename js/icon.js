@@ -27,7 +27,7 @@ const table = [
     },
     {
         image: 'images/DragonetTired1.png',
-        imageShow: 'images/Dreams.jpg'
+        imageShow: 'images/estupido.png'
     },
     {
         image: 'images/Milly.png',
@@ -56,15 +56,17 @@ makeBtn()
 makeText()
 
 
-
+let remaining = 0
 
 btn.addEventListener('click', ()=> {
     clear = 0
+
     pictureShow.style.opacity = '0'
     randNum = Math.random() * table.length
     total = Math.floor(randNum)
 
     while (holder == total || table[total].image == "none"){
+        remaining = 0
         stopper = stopper + 1
         randNum = Math.random() * table.length
         total = Math.floor(randNum)
@@ -88,6 +90,11 @@ btn.addEventListener('click', ()=> {
     else {
         picture.src = "images/Sorry.png"
     }
+    table.forEach(count)
+    if (remaining == table.length - 1){
+
+    }
+    pictureShow.src = "imagesCART/Placeholder.png"
 })
 
 // ******
@@ -140,4 +147,11 @@ function makeText(){
     random.style.top = `${windowHeight/2 - 250/2 * (3/2) -100}px`
     random.style.textAlign = 'center'
 
+}
+
+function count(){
+    if (table[total].image == "none"){
+        remaining = remaining + 1
+    }
+    console.log(remaining)
 }

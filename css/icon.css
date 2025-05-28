@@ -32,7 +32,7 @@ body {
 .pictureShow {
     position: absolute;
     opacity: 0;
-    transition: .5s ease;
+    transition: 1s ease;
 
 }
 .pictureShow .show {
