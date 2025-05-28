@@ -42,10 +42,12 @@ btn.addEventListener('click', ()=> {
         console.log(randNum)
         if (stopper == 20){
             stopLoop = -100
-            if (stopLoop == -100){
-                picture.src = "images/Sorry.png"
-            }
+            picture.src = "images/Sorry.png"
+            // if (stopLoop == -100){
+            //     picture.src = "images/Sorry.png"
+            // }
         }
+    }
 
     stopper = -10
 
@@ -58,7 +60,7 @@ btn.addEventListener('click', ()=> {
     table[total].image = "none"
 
 
-    }
+
     // picture.src = "images/little.png"
 })
 const images = []
