@@ -35,13 +35,13 @@ btn.addEventListener('click', ()=> {
     randNum = Math.random() * table.length
     total = Math.floor(randNum)
 
-    while (holder == total || table[total].image == "none" || stopLoop == -100){
+    while (holder == total || table[total].image == "none" || stopLoop < -100){
         stopper = stopper + 1
         randNum = Math.random() * 3
         total = Math.floor(randNum)
         console.log(randNum)
         if (stopper > 20){
-            stopLoop = -100
+            stopLoop = stopLoop - 1000
             picture.src = "images/Sorry.png"
             // if (stopLoop == -100){
             //     picture.src = "images/Sorry.png"
