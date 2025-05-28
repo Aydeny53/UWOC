@@ -50,7 +50,8 @@ btn.addEventListener('click', ()=> {
     picture.src = `${table[total].image}`
     table[total].image = "none"
     if (stopLoop == -100){
-        
+        picture.src = "images/sorry.png"
+
     }
     // picture.src = "images/little.png"
 })
