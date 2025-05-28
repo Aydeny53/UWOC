@@ -40,7 +40,7 @@ btn.addEventListener('click', ()=> {
         randNum = Math.random() * 3
         total = Math.floor(randNum)
         console.log(stopper)
-        if (stopper > 100){
+        if (stopper > 1000){
             break
             stopLoop = stopLoop - 1000
         }
