@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #f1f1f1
+    background-color: #e1e1e1
 }
 
 .picture {
@@ -21,5 +21,9 @@ body {
     border: none;
     color: #ffffff;
     background-color: grey;
-    
+    cursor:pointer;
+}
+
+.btn:hover{
+    opacity: .8;
 }
