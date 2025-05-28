@@ -127,7 +127,7 @@ function makeBtn(){
     btn.style.width = `${btnWidth}px`
     btn.style.height = `${btnHeight}px`
     btn.style.left = `${windowWidth/2 - btnWidth/2}px`
-    btn.style.top = `${windowHeight/2 + 250/2 * (3/2)}px`
+    btn.style.top = `${windowHeight/2 + 100/2 * (3/2)}px`
 
 }
 
