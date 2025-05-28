@@ -18,36 +18,228 @@ let stopper = -10
 let clear = 0
 const table = [
     {
-        image: 'images/Full.png',
+        image: 'imagesCART/amTrack.jpg',
         imageShow: 'images/Dreams.jpg'
     },
     {
-        image: 'images/KeepIt.jpg',
+        image: 'imagesCART/americanExpress.gif',
         imageShow: 'images/Dreams.jpg'
     },
     {
-        image: 'images/DragonetTired1.png',
+        image: 'imagesCART/audi.gif',
         imageShow: 'images/estupido.png'
     },
     {
-        image: 'images/Milly.png',
+        image: 'imagesCART/bMW.jpg',
         imageShow: 'images/Dreams.jpg'
     },
     {
-        image: 'images/car1.jpg',
+        image: 'imagesCART/boyScoutsOfAmerica.gif',
         imageShow: 'images/Dreams.jpg'
     },
     {
-        image: 'images/watching.jpg',
+        image: 'imagesCART/canon.jpg',
         imageShow: 'images/Dreams.jpg'
     },
     {
-        image: 'images/Society.webp',
+        image: 'imagesCART/adidas.gif',
         imageShow: 'images/Dreams.jpg'
     },
     {
-        image: 'images/Autograph.jpg',
+        image: 'imagesCART/CART.jpg',
         imageShow: 'images/littleDude2.png'
+    },
+    {
+        image: 'imagesCART/champion.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/chase.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/citiBank.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/comedyCentral.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/converse.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/disneyPlus.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/dolbySystems.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/dollarTree.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/dominoes.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/drPepper.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/fireStone.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/goodYear.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/gucci.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/hydroFlask.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/ihop.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/infinity.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/jurassicPark.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/KansasCityChiefs.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/levis.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/Logitech.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/modPizza.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/mtnDew.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/nespresso.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/netGear.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/northFace.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/norton.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/overWatch.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/paramount.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/photoShop.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/playStation.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/postIt.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/powerAde.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/rayBans.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/rolex.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/roxy.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/SAAB.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/southWestAirlines.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/Spotify.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/texasInstruments.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/timberLand.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/underArmor.gif',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/UPS.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/usPostOffice.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/volvo.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/vW.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/whatsApp.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/worldWildLife.jpg',
+        imageShow: 'imagesCART2/'
+    },
+    {
+        image: 'imagesCART/yelp.jpg',
+        imageShow: 'imagesCART2/'
     },
 ]
 
@@ -114,7 +306,7 @@ btnShow.addEventListener('click', ()=> {
 
 
 function makePicture(){
-    let pictureWidth = 250
+    let pictureWidth = 400
     let pictureHeight = 250
     picture.style.width = `${pictureWidth}px`
     picture.style.height = `${pictureHeight}px`
