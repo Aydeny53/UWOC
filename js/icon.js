@@ -18,7 +18,7 @@ const table = [
         text: "I'm Thirsty"
     },
     {
-        image: 'images/Milly.png',
+        image: 'images/DragonetTired1.png',
         text: "I'm Thirsty"
     },
     {
