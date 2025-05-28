@@ -32,9 +32,13 @@ const table = [
         image: 'images/car1.jpg',
     }
 ]
-console.log(randNum)
+let pictureWidth = 250
+picture.style.width = `${pictureWidth}px`
+picture.style.left = `${windowWidth/2 - pictureWidth/2}px`
 
-
+let btnWidth = 105
+btn.style.width = `${btnWidth}px`
+btn.style.left = `${windowWidth/2 - btnWidth/2}px`
 
 
 
