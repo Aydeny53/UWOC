@@ -25,16 +25,19 @@ console.log(randNum)
 btn.addEventListener('click', ()=> {
     randNum = Math.random() * 3
     total = Math.floor(randNum)
-    while (holder == total){
+
+    while (holder == total || table[total].image == "none"){
     randNum = Math.random() * 3
     total = Math.floor(randNum)
     }
+
     holder = total
 
 
     console.log(total)
 
     picture.src = `${table[total].image}`
+    table[total].image = "none"
     // picture.src = "images/little.png"
 })
 const images = []
