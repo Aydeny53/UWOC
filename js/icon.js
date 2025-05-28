@@ -30,11 +30,23 @@ const table = [
     },
     {
         image: 'images/car1.jpg',
-    }
+    },
+    {
+        image: 'images/watching.jpg',
+    },
+    {
+        image: 'images/Society.webp',
+    },
+    {
+        image: 'images/Autograph.jpg',
+    },
 ]
 let pictureWidth = 250
+let pictureHeight = 250
 picture.style.width = `${pictureWidth}px`
+picture.style.height = `${pictureHeight}px`
 picture.style.left = `${windowWidth/2 - pictureWidth/2}px`
+picture.style.top = `${windowHeight/2 - pictureHeight/2 * (3/2)}px`
 
 let btnWidth = 105
 btn.style.width = `${btnWidth}px`
