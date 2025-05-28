@@ -15,6 +15,7 @@ let total = 0
 let holder =0
 let randNum = -1
 let stopper = -10
+let clear = 0
 const table = [
     {
         image: 'images/Full.png',
@@ -58,6 +59,7 @@ makeText()
 
 
 btn.addEventListener('click', ()=> {
+    clear = 0
     pictureShow.style.opacity = '0'
     randNum = Math.random() * table.length
     total = Math.floor(randNum)
@@ -89,10 +91,17 @@ btn.addEventListener('click', ()=> {
 })
 
 // ******
+
 btnShow.addEventListener('click', ()=> {
     pictureShow.src = table[total].imageShow
-    pictureShow.classList.toggle('show')
-    pictureShow.style.opacity = 1
+    if (clear == 0){
+        pictureShow.style.opacity = 1
+        clear = 1
+    }
+    else{
+        pictureShow.style.opacity = 0
+        clear = 0
+    }
 
 })
 

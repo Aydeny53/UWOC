@@ -22,10 +22,12 @@ body {
 }
 
 .picture {
+
     position: absolute;
     left: 50%;
     height: 250px;
     width: 250px;
+    transition: .5s ease;
 }
 .pictureShow {
     position: absolute;
