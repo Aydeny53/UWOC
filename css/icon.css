@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.picture {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+}
+.btn {
+    position: absolute;
+    width: 105px;
+    height: 50px;
+    top: 400px;
+}
