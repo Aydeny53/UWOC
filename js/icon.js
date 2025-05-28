@@ -37,7 +37,7 @@ btn.addEventListener('click', ()=> {
 
     while (holder == total || table[total].image == "none"){
         stopper = stopper + 1
-        randNum = Math.random() * 3
+        randNum = Math.random() * table.length
         total = Math.floor(randNum)
         console.log(stopper)
         if (stopper > 1000){
