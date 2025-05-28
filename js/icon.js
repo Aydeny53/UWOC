@@ -40,7 +40,7 @@ btn.addEventListener('click', ()=> {
         randNum = Math.random() * 3
         total = Math.floor(randNum)
         console.log(randNum)
-        if (stopper == 20){
+        if (stopper > 20){
             stopLoop = -100
             picture.src = "images/Sorry.png"
             // if (stopLoop == -100){
