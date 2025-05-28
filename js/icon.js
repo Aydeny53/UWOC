@@ -4,7 +4,7 @@ const btn = document.querySelector('.btn')
 
 let number = 1
 let total = 0
-let randNum = Math.random() * 50
+let randNum = 0
 const table = [
     {
         image: 'images/Full.png',
@@ -22,8 +22,8 @@ const table = [
 console.log(randNum)
 
 btn.addEventListener('click', ()=> {
-    randNum = Math.random() * 2
-    total = Math.ceil(randNum)
+    randNum = Math.random() * 3
+    total = Math.floor(randNum)
     console.log(total)
     picture.src = `${table[total].image}`
     // picture.src = "images/little.png"
