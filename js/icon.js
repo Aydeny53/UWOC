@@ -11,11 +11,11 @@ const table = [
         text: "I'm Thirsty"
     },
     {
-        image: '../images/Keepit.jpg',
+        image: 'images/Keepit.jpg',
         text: "I'm Thirsty"
     },
     {
-        image: '../images/Milly.png',
+        image: 'images/Milly.png',
         text: "I'm Thirsty"
     }
 ]
