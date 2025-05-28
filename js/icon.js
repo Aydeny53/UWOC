@@ -35,7 +35,7 @@ btn.addEventListener('click', ()=> {
     randNum = Math.random() * table.length
     total = Math.floor(randNum)
 
-    while (holder == total || table[total].image == "none" || stopLoop < -100){
+    while (holder == total && stopLoop < -100 || table[total].image == "none" && stopLoop < -100){
         stopper = stopper + 1
         randNum = Math.random() * 3
         total = Math.floor(randNum)
@@ -57,9 +57,10 @@ btn.addEventListener('click', ()=> {
 
     console.log(total)
 
+    if ()
     picture.src = `${table[total].image}`
     table[total].image = "none"
-    
+
 
 
 
