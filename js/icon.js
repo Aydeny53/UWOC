@@ -1,6 +1,6 @@
 const picture = document.querySelector('.picture')
 const btn = document.querySelector('.btn')
-
+const random = document.querySelector('.random')
 
 const windowWidth = window.innerWidth
 const windowHeight = window.innerHeight
@@ -45,7 +45,7 @@ const table = [
 makePicture()
 makeBtn()
 
-
+random.style.top
 
 btn.addEventListener('click', ()=> {
     randNum = Math.random() * table.length
