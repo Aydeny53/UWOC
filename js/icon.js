@@ -23,12 +23,16 @@ const table = [
     },
     {
         image: 'images/Milly.png',
+
+    },
+    {
+        image: 'images/car1.jpg',
     }
 ]
 console.log(randNum)
 
 btn.addEventListener('click', ()=> {
-    randNum = Math.random() * 3
+    randNum = Math.random() * table.length
     total = Math.floor(randNum)
 
     while (holder == total || table[total].image == "none" || stopLoop == -100){
