@@ -2,6 +2,8 @@ const picture = document.querySelector('.picture')
 const btn = document.querySelector('.btn')
 
 
+const windowWidth = window.innerWidth
+
 let number = 1
 let total = 0
 let holder =0
@@ -30,6 +32,10 @@ const table = [
     }
 ]
 console.log(randNum)
+
+
+
+
 
 btn.addEventListener('click', ()=> {
     randNum = Math.random() * table.length
@@ -65,6 +71,5 @@ btn.addEventListener('click', ()=> {
 
 
 
-    // picture.src = "images/little.png"
 })
-const images = []
+
