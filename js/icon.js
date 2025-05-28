@@ -35,7 +35,7 @@ btn.addEventListener('click', ()=> {
     randNum = Math.random() * table.length
     total = Math.floor(randNum)
 
-    while (holder == total && stopLoop < -100 || table[total].image == "none" && stopLoop < -100){
+    while (holder == total || table[total].image == "none" && stopLoop < -100){
         stopper = stopper + 1
         randNum = Math.random() * 3
         total = Math.floor(randNum)
@@ -43,10 +43,6 @@ btn.addEventListener('click', ()=> {
         if (stopper > 20){
             break
             stopLoop = stopLoop - 1000
-            picture.src = "images/Sorry.png"
-            // if (stopLoop == -100){
-            //     picture.src = "images/Sorry.png"
-            // }
         }
     }
 
@@ -57,9 +53,14 @@ btn.addEventListener('click', ()=> {
 
     console.log(total)
 
-    if ()
-    picture.src = `${table[total].image}`
-    table[total].image = "none"
+    if (table[total].image != "none"){
+        picture.src = `${table[total].image}`
+        table[total].image = "none"
+    }
+    else {
+        picture.src = "images/Sorry.png"
+    }
+
 
 
 
