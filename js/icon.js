@@ -14,19 +14,15 @@ let stopLoop = 0
 const table = [
     {
         image: 'images/Full.png',
-        text: "I'm Thirsty"
     },
     {
         image: 'images/KeepIt.jpg',
-        text: "I'm Thirsty"
     },
     {
         image: 'images/DragonetTired1.png',
-        text: "I'm Thirsty"
     },
     {
         image: 'images/Milly.png',
-
     },
     {
         image: 'images/car1.jpg',
@@ -44,6 +40,7 @@ const table = [
 
 makePicture()
 makeBtn()
+makeText()
 
 
 
