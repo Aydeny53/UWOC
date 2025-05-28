@@ -98,6 +98,6 @@ function makeText(){
     // random.style.top = `${randomTop}px`
     // let randomLeft = `${windowWidth/2 - 1/2}`
     // random.style.left = `${randomLeft}px`
-    random.style.left = '200px'
+    random.style.textAlign = 'center'
 
 }
