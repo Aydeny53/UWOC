@@ -93,8 +93,11 @@ function makeBtn(){
 }
 
 function makeText(){
-    let randomTop = `${windowHeight/2 - 0/2 * (3/2) - 100}`
-    random.style.top = `${randomTop}px`
-    let randomLeft = `${windowWidth/2 - 1/2}`
-    random.style.left = `${randomLeft}px`
+    random.style.position = 'absolute'
+    // let randomTop = `${windowHeight/2 - 0/2 * (3/2) - 100}`
+    // random.style.top = `${randomTop}px`
+    // let randomLeft = `${windowWidth/2 - 1/2}`
+    // random.style.left = `${randomLeft}px`
+    random.style.left = '200px'
+
 }
