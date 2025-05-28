@@ -27,11 +27,20 @@ body {
     height: 250px;
     width: 250px;
 }
+.pictureShow {
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
+
+}
+.pictureShow .show {
+    opacity: 1;
+}
 .btn {
     position: absolute;
-    width: 105px;
+    /* width: 105px;
     height: 50px;
-    top: 400px;
+    top: 60px; */
     font-size: 30px;
     border: none;
     color: #ffffff;
@@ -40,5 +49,20 @@ body {
 }
 
 .btn:hover{
+    opacity: .8;
+}
+
+.btnShow{
+    position: absolute;
+    top: 200px;
+    font-size: 30px;
+    height: 50px;
+    width: 105px;
+    border:none;
+    color: #ffffff;
+    background-color: grey;
+    cursor:pointer;
+}
+.btnShow:hover{
     opacity: .8;
 }

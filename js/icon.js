@@ -1,40 +1,52 @@
+
 const picture = document.querySelector('.picture')
+const pictureShow = document.querySelector('.pictureShow')
 const btn = document.querySelector('.btn')
+const btnShow = document.querySelector(`.btnShow`)
 const random = document.querySelector('.random')
 
 const windowWidth = window.innerWidth
 const windowHeight = window.innerHeight
+
+pictureShow.style.opacity = 0
 
 let number = 1
 let total = 0
 let holder =0
 let randNum = -1
 let stopper = -10
-let stopLoop = 0
 const table = [
     {
         image: 'images/Full.png',
+        imageShow: 'images/Dreams.jpg'
     },
     {
         image: 'images/KeepIt.jpg',
+        imageShow: 'images/Dreams.jpg'
     },
     {
         image: 'images/DragonetTired1.png',
+        imageShow: 'images/Dreams.jpg'
     },
     {
         image: 'images/Milly.png',
+        imageShow: 'images/Dreams.jpg'
     },
     {
         image: 'images/car1.jpg',
+        imageShow: 'images/Dreams.jpg'
     },
     {
         image: 'images/watching.jpg',
+        imageShow: 'images/Dreams.jpg'
     },
     {
         image: 'images/Society.webp',
+        imageShow: 'images/Dreams.jpg'
     },
     {
         image: 'images/Autograph.jpg',
+        imageShow: 'images/littleDude2.png'
     },
 ]
 
@@ -44,7 +56,9 @@ makeText()
 
 
 
+
 btn.addEventListener('click', ()=> {
+    pictureShow.style.opacity = '0'
     randNum = Math.random() * table.length
     total = Math.floor(randNum)
 
@@ -55,7 +69,6 @@ btn.addEventListener('click', ()=> {
         console.log(stopper)
         if (stopper > 100){
             break
-            stopLoop = stopLoop - 1000
         }
     }
 
@@ -75,6 +88,15 @@ btn.addEventListener('click', ()=> {
     }
 })
 
+// ******
+btnShow.addEventListener('click', ()=> {
+    pictureShow.src = table[total].imageShow
+    pictureShow.classList.toggle('show')
+    pictureShow.style.opacity = 1
+
+})
+
+
 function makePicture(){
     let pictureWidth = 250
     let pictureHeight = 250
@@ -82,11 +104,22 @@ function makePicture(){
     picture.style.height = `${pictureHeight}px`
     picture.style.left = `${windowWidth/2 - pictureWidth/2}px`
     picture.style.top = `${windowHeight/2 - pictureHeight/2 * (3/2)}px`
+
+    let pictureShowWidth = 250
+    let pictureShowHeight = 250
+    pictureShow.style.width = `${pictureShowWidth}px`
+    pictureShow.style.height = `${pictureShowHeight}px`
+    pictureShow.style.left = `${windowWidth/2 - pictureWidth/2 - 300}px`
+    pictureShow.style.top = `${windowHeight/2 - pictureHeight/2 * (3/2)}px`
 }
 function makeBtn(){
     let btnWidth = 105
+    let btnHeight = 50
     btn.style.width = `${btnWidth}px`
+    btn.style.height = `${btnHeight}px`
     btn.style.left = `${windowWidth/2 - btnWidth/2}px`
+    btn.style.top = `${windowHeight/2 + 250/2 * (3/2)}px`
+
 }
 
 function makeText(){
@@ -95,6 +128,7 @@ function makeText(){
     // random.style.top = `${randomTop}px`
     // let randomLeft = `${windowWidth/2 - 1/2}`
     // random.style.left = `${randomLeft}px`
+    random.style.top = `${windowHeight/2 - 250/2 * (3/2) -100}px`
     random.style.textAlign = 'center'
 
 }
