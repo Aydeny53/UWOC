@@ -7,23 +7,25 @@ let total = 0
 let randNum = Math.random() * 50
 const table = [
     {
-        image: 'images/full.png',
+        image: 'images/Full.png',
         text: "I'm Thirsty"
     },
     {
-        image: 'images/keepit.jpg',
+        image: '../images/Keepit.jpg',
         text: "I'm Thirsty"
     },
     {
-        image: 'images/milly.png',
+        image: '../images/Milly.png',
         text: "I'm Thirsty"
     }
 ]
 console.log(randNum)
 
 btn.addEventListener('click', ()=> {
-    randNum = Math.random() * 50
-    total = Math.ceil(total)
-    picture.src = "images/little.png"
+    randNum = Math.random() * 2
+    total = Math.ceil(randNum)
+    console.log(total)
+    picture.src = `${table[total].image}`
+    // picture.src = "images/little.png"
 })
 const images = []
