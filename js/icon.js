@@ -3,6 +3,7 @@ const btn = document.querySelector('.btn')
 
 
 const windowWidth = window.innerWidth
+const windowHeight = window.innerHeight
 
 let number = 1
 let total = 0
