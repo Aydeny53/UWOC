@@ -23,7 +23,7 @@ const table = [
     },
     {
         image: 'imagesCART/americanExpress.gif',
-        imageShow: 'images/Dreams.jpg'
+        imageShow: 'imagesCARTshow/american_express_logo.png'
     },
     {
         image: 'imagesCART/audi.gif',
@@ -35,7 +35,7 @@ const table = [
     },
     {
         image: 'imagesCART/boyScoutsOfAmerica.gif',
-        imageShow: 'images/Dreams.jpg'
+        imageShow: 'imagesCARTshow/boy_scouts_of_america_logo.png'
     },
     {
         image: 'imagesCART/canon.jpg',
@@ -43,7 +43,7 @@ const table = [
     },
     {
         image: 'imagesCART/adidas.gif',
-        imageShow: 'images/Dreams.jpg'
+        imageShow: 'imagesCARTshow/adidas_logo.png'
     },
     {
         image: 'imagesCART/CART.jpg',
@@ -51,39 +51,39 @@ const table = [
     },
     {
         image: 'imagesCART/champion.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/champion_logo.png'
     },
     {
         image: 'imagesCART/chase.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/chase_logo.jpg'
     },
     {
         image: 'imagesCART/citiBank.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/citibank_logo.png'
     },
     {
         image: 'imagesCART/comedyCentral.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/comedy_central_logo.png'
     },
     {
         image: 'imagesCART/converse.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/converse_logo.png'
     },
     {
         image: 'imagesCART/disneyPlus.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/'
     },
     {
         image: 'imagesCART/dolbySystems.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/dolby_logo.png'
     },
     {
         image: 'imagesCART/dollarTree.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/dollar_tree_logo.jpg'
     },
     {
         image: 'imagesCART/dominoes.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/'
     },
     {
         image: 'imagesCART/drPepper.jpg',
@@ -91,11 +91,11 @@ const table = [
     },
     {
         image: 'imagesCART/fireStone.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/firestone_logo.png'
     },
     {
         image: 'imagesCART/goodYear.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/goodyear_logo.jpg'
     },
     {
         image: 'imagesCART/gucci.gif',
@@ -107,7 +107,7 @@ const table = [
     },
     {
         image: 'imagesCART/ihop.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/ihop_logo.png'
     },
     {
         image: 'imagesCART/infinity.jpg',
@@ -119,15 +119,15 @@ const table = [
     },
     {
         image: 'imagesCART/KansasCityChiefs.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/kansas_city_chiefs_logo.png'
     },
     {
         image: 'imagesCART/levis.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/levis_logo.png'
     },
     {
         image: 'imagesCART/Logitech.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/logitech_logo.jpg'
     },
     {
         image: 'imagesCART/modPizza.jpg',
@@ -135,11 +135,11 @@ const table = [
     },
     {
         image: 'imagesCART/mtnDew.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/mtn_dew_logo.png'
     },
     {
         image: 'imagesCART/nespresso.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/nespresso_logo.png'
     },
     {
         image: 'imagesCART/netGear.jpg',
@@ -147,11 +147,11 @@ const table = [
     },
     {
         image: 'imagesCART/northFace.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/north_face_logo.png'
     },
     {
         image: 'imagesCART/norton.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'norton_logo.png'
     },
     {
         image: 'imagesCART/overWatch.jpg',
@@ -159,7 +159,7 @@ const table = [
     },
     {
         image: 'imagesCART/paramount.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'paramount_logo.jpg'
     },
     {
         image: 'imagesCART/photoShop.jpg',
@@ -167,11 +167,11 @@ const table = [
     },
     {
         image: 'imagesCART/playStation.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/playstation_logo.png'
     },
     {
         image: 'imagesCART/postIt.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/post-it_logo.png'
     },
     {
         image: 'imagesCART/powerAde.jpg',
@@ -187,31 +187,31 @@ const table = [
     },
     {
         image: 'imagesCART/roxy.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/roxy_logo.png'
     },
     {
         image: 'imagesCART/SAAB.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/saab_logo.jpg'
     },
     {
         image: 'imagesCART/southWestAirlines.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/southwest_airlines_logo.png'
     },
     {
         image: 'imagesCART/Spotify.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/spotify_logo.png'
     },
     {
         image: 'imagesCART/texasInstruments.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/texas_instruments_logo.png'
     },
     {
         image: 'imagesCART/timberLand.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/timberland_logo.png'
     },
     {
         image: 'imagesCART/underArmor.gif',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/under_armour_logo.png'
     },
     {
         image: 'imagesCART/UPS.jpg',
@@ -219,11 +219,11 @@ const table = [
     },
     {
         image: 'imagesCART/usPostOffice.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/united_states_postal_service_logo.png'
     },
     {
         image: 'imagesCART/volvo.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/volvo_logo.png'
     },
     {
         image: 'imagesCART/vW.jpg',
@@ -235,11 +235,11 @@ const table = [
     },
     {
         image: 'imagesCART/worldWildLife.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/world_wildlife_fund_logo.png'
     },
     {
         image: 'imagesCART/yelp.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/yelp_logo.png'
     },
 ]
 
@@ -282,7 +282,7 @@ btn.addEventListener('click', ()=> {
     else {
         picture.src = "images/Sorry.png"
     }
-    table.forEach(count)
+    table.forEach(count) // This is SUPPOSED to make it so it'll tell you if you're at the end.
     if (remaining == table.length - 1){
 
     }
