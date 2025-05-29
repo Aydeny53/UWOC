@@ -5,6 +5,7 @@ const btn = document.querySelector('.btn')
 const btnShow = document.querySelector(`.btnShow`)
 const random = document.querySelector('.random')
 
+
 const windowWidth = window.innerWidth
 const windowHeight = window.innerHeight
 
@@ -18,36 +19,16 @@ let stopper = -10
 let clear = 0
 const table = [
     {
-        image: 'imagesCART/amTrack.jpg',
-        imageShow: 'images/Dreams.jpg'
-    },
-    {
         image: 'imagesCART/americanExpress.gif',
         imageShow: 'imagesCARTshow/american_express_logo.png'
-    },
-    {
-        image: 'imagesCART/audi.gif',
-        imageShow: 'images/estupido.png'
-    },
-    {
-        image: 'imagesCART/bMW.jpg',
-        imageShow: 'images/Dreams.jpg'
     },
     {
         image: 'imagesCART/boyScoutsOfAmerica.gif',
         imageShow: 'imagesCARTshow/boy_scouts_of_america_logo.png'
     },
     {
-        image: 'imagesCART/canon.jpg',
-        imageShow: 'images/Dreams.jpg'
-    },
-    {
         image: 'imagesCART/adidas.gif',
         imageShow: 'imagesCARTshow/adidas_logo.png'
-    },
-    {
-        image: 'imagesCART/CART.jpg',
-        imageShow: 'images/littleDude2.png'
     },
     {
         image: 'imagesCART/champion.jpg',
@@ -70,24 +51,12 @@ const table = [
         imageShow: 'imagesCARTshow/converse_logo.png'
     },
     {
-        image: 'imagesCART/disneyPlus.jpg',
-        imageShow: 'imagesCARTshow/'
-    },
-    {
         image: 'imagesCART/dolbySystems.gif',
         imageShow: 'imagesCARTshow/dolby_logo.png'
     },
     {
         image: 'imagesCART/dollarTree.gif',
         imageShow: 'imagesCARTshow/dollar_tree_logo.jpg'
-    },
-    {
-        image: 'imagesCART/dominoes.jpg',
-        imageShow: 'imagesCARTshow/'
-    },
-    {
-        image: 'imagesCART/drPepper.jpg',
-        imageShow: 'imagesCART2/'
     },
     {
         image: 'imagesCART/fireStone.jpg',
@@ -98,24 +67,8 @@ const table = [
         imageShow: 'imagesCARTshow/goodyear_logo.jpg'
     },
     {
-        image: 'imagesCART/gucci.gif',
-        imageShow: 'imagesCART2/'
-    },
-    {
-        image: 'imagesCART/hydroFlask.jpg',
-        imageShow: 'imagesCART2/'
-    },
-    {
         image: 'imagesCART/ihop.gif',
         imageShow: 'imagesCARTshow/ihop_logo.png'
-    },
-    {
-        image: 'imagesCART/infinity.jpg',
-        imageShow: 'imagesCART2/'
-    },
-    {
-        image: 'imagesCART/jurassicPark.jpg',
-        imageShow: 'imagesCART2/'
     },
     {
         image: 'imagesCART/KansasCityChiefs.gif',
@@ -130,10 +83,6 @@ const table = [
         imageShow: 'imagesCARTshow/logitech_logo.jpg'
     },
     {
-        image: 'imagesCART/modPizza.jpg',
-        imageShow: 'imagesCART2/'
-    },
-    {
         image: 'imagesCART/mtnDew.gif',
         imageShow: 'imagesCARTshow/mtn_dew_logo.png'
     },
@@ -142,28 +91,16 @@ const table = [
         imageShow: 'imagesCARTshow/nespresso_logo.png'
     },
     {
-        image: 'imagesCART/netGear.jpg',
-        imageShow: 'imagesCART2/'
-    },
-    {
         image: 'imagesCART/northFace.gif',
         imageShow: 'imagesCARTshow/north_face_logo.png'
     },
     {
         image: 'imagesCART/norton.gif',
-        imageShow: 'norton_logo.png'
-    },
-    {
-        image: 'imagesCART/overWatch.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/norton_logo.png'
     },
     {
         image: 'imagesCART/paramount.gif',
-        imageShow: 'paramount_logo.jpg'
-    },
-    {
-        image: 'imagesCART/photoShop.jpg',
-        imageShow: 'imagesCART2/'
+        imageShow: 'imagesCARTshow/paramount_logo.jpg'
     },
     {
         image: 'imagesCART/playStation.gif',
@@ -172,18 +109,6 @@ const table = [
     {
         image: 'imagesCART/postIt.gif',
         imageShow: 'imagesCARTshow/post-it_logo.png'
-    },
-    {
-        image: 'imagesCART/powerAde.jpg',
-        imageShow: 'imagesCART2/'
-    },
-    {
-        image: 'imagesCART/rayBans.jpg',
-        imageShow: 'imagesCART2/'
-    },
-    {
-        image: 'imagesCART/rolex.gif',
-        imageShow: 'imagesCART2/'
     },
     {
         image: 'imagesCART/roxy.gif',
@@ -214,10 +139,6 @@ const table = [
         imageShow: 'imagesCARTshow/under_armour_logo.png'
     },
     {
-        image: 'imagesCART/UPS.jpg',
-        imageShow: 'imagesCART2/'
-    },
-    {
         image: 'imagesCART/usPostOffice.jpg',
         imageShow: 'imagesCARTshow/united_states_postal_service_logo.png'
     },
@@ -226,21 +147,13 @@ const table = [
         imageShow: 'imagesCARTshow/volvo_logo.png'
     },
     {
-        image: 'imagesCART/vW.jpg',
-        imageShow: 'imagesCART2/'
-    },
-    {
-        image: 'imagesCART/whatsApp.jpg',
-        imageShow: 'imagesCART2/'
-    },
-    {
         image: 'imagesCART/worldWildLife.jpg',
         imageShow: 'imagesCARTshow/world_wildlife_fund_logo.png'
     },
     {
         image: 'imagesCART/yelp.jpg',
         imageShow: 'imagesCARTshow/yelp_logo.png'
-    },
+    }
 ]
 
 makePicture()
@@ -306,27 +219,45 @@ btnShow.addEventListener('click', ()=> {
 
 
 function makePicture(){
-    let pictureWidth = 400
-    let pictureHeight = 250
+    // let pictureWidth = `${windowWidth/2}`
+    // let pictureHeight = `${windowHeight/2}`
+    let pictureWidth = 550
+    let pictureHeight = 350
     picture.style.width = `${pictureWidth}px`
     picture.style.height = `${pictureHeight}px`
     picture.style.left = `${windowWidth/2 - pictureWidth/2}px`
-    picture.style.top = `${windowHeight/2 - pictureHeight/2 * (3/2)}px`
+    picture.style.top = `${windowHeight/2 - pictureHeight - 20}px`
 
-    let pictureShowWidth = 250
-    let pictureShowHeight = 250
+    // let pictureShowWidth = `${windowWidth/2}`
+    // let pictureShowHeight = `${windowHeight/2}`
+    let pictureShowWidth = 550
+    let pictureShowHeight = 350
     pictureShow.style.width = `${pictureShowWidth}px`
     pictureShow.style.height = `${pictureShowHeight}px`
-    pictureShow.style.left = `${windowWidth/2 - pictureWidth/2 - 300}px`
-    pictureShow.style.top = `${windowHeight/2 - pictureHeight/2 * (3/2)}px`
-}
-function makeBtn(){
+    pictureShow.style.left = `${windowWidth/2 - pictureWidth/2}px`
+    pictureShow.style.bottom = '5px'
+    // pictureShow.style.bottom = `${windowHeight/2 - pictureHeight/2 * (3/2)}px`
+
+
     let btnWidth = 105
     let btnHeight = 50
     btn.style.width = `${btnWidth}px`
     btn.style.height = `${btnHeight}px`
-    btn.style.left = `${windowWidth/2 - btnWidth/2}px`
-    btn.style.top = `${windowHeight/2 + 100/2 * (3/2)}px`
+    btn.style.right = `${windowWidth/2 - btnWidth/2}px`
+    btn.style.top = `${windowHeight/2 -12}px`
+    btn.style.zIndex = '100'
+    btnShow.style.zindex = '100'
+    btnShow.style.top = `${windowHeight/2}px`
+}
+function makeBtn(){
+    // let btnWidth = 105
+    // let btnHeight = 50
+    // btn.style.width = `${btnWidth}px`
+    // btn.style.height = `${btnHeight}px`
+    // btn.style.right = `${windowWidth/2 - btnWidth/2}px`
+    // btn.style.top = `${windowHeight/2 - pictureHeight}px`
+    // btn.style.zIndex = '100'
+    // btnShow.style.zindex = '100'
 
 }
 
@@ -338,6 +269,7 @@ function makeText(){
     // random.style.left = `${randomLeft}px`
     random.style.top = `${windowHeight/2 - 250/2 * (3/2) -100}px`
     random.style.textAlign = 'center'
+    random.style.color = 'rgba(0,0,0,0)'
 
 }
 
