@@ -14,13 +14,31 @@ body {
     height: 100vh;
     width: 100vw;
 }
-
+.pictureHint{
+    font-family: "Press Start 2P", sans-serif;
+    right: 0;
+    transition: .5s ease;
+    background-color:grey;
+    font-size:25px;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    padding: 15px;
+    color: white;
+}
 .random {
     position: relative;
-    font-size: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
     font-weight: bold;
     margin: auto;
     text-align: center;
+    background-color: grey;
+    color: white;
+    width: 105px;
+    height: 50px;
+    font-family: "Press Start 2P", sans-serif;
     /* left: 200px */
 }
 
