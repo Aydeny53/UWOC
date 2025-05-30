@@ -7,51 +7,51 @@ const closeBtn = document.getElementById('close')
 
 const data = [
     {
-        image: '../images2/drink.jpg',
+        image: 'images2/drink.jpg',
         text: "I'm Thirsty"
     },
     {
-        image: '../images2/food.jpg',
+        image: 'images2/food.jpg',
         text: "I'm Hungry"
     },
     {
-        image: '../images2/tired.jpg',
+        image: 'images2/tired.jpg',
         text: "I'm Tired"
     },
     {
-        image: '../images2/angry.jpg',
+        image: 'images2/angry.jpg',
         text: "I'm Angry"
     },
     {
-        image: '../images2/grandma.jpg',
+        image: 'images2/grandma.jpg',
         text: "I Want To Go To Grandmas"
     },
     {
-        image: '../images2/hurt.jpg',
+        image: 'images2/hurt.jpg',
         text: "I'm Hurt"
     },
     {
-        image: '../images2/happy.jpg',
+        image: 'images2/happy.jpg',
         text: "I'm Happy"
     },
     {
-        image: '../images2/home.jpg',
+        image: 'images2/home.jpg',
         text: "I Want To Go Home"
     },
     {
-        image: '../images2/outside.jpg',
+        image: 'images2/outside.jpg',
         text: "I Want To Go Outside"
     },
     {
-        image: '../images2/sad.jpg',
+        image: 'images2/sad.jpg',
         text: "I'm Sad"
     },
     {
-        image: '../images2/scared.jpg',
+        image: 'images2/scared.jpg',
         text: "I'm Scared"
     },
     {
-        image: '../images2/school.jpg',
+        image: 'images2/school.jpg',
         text: "I Want To Go To School"
     }
 ]
