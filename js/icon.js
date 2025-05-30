@@ -17,9 +17,11 @@ let holder =0
 let randNum = -1
 let stopper = -10
 let clear = 0
+
+let pictureEnd = 50
 const table = [
     {
-        image: 'imagesCART/americanExpress.gif',
+        image: 'imagesCART/americanExpress.png',
         imageShow: 'imagesCARTshow/american_express_logo.png'
     },
     {
@@ -55,7 +57,7 @@ const table = [
         imageShow: 'imagesCARTshow/dolby_logo.png'
     },
     {
-        image: 'imagesCART/dollarTree.gif',
+        image: 'imagesCART/dollarTree.jpg',
         imageShow: 'imagesCARTshow/dollar_tree_logo.jpg'
     },
     {
@@ -63,7 +65,7 @@ const table = [
         imageShow: 'imagesCARTshow/firestone_logo.png'
     },
     {
-        image: 'imagesCART/goodYear.gif',
+        image: 'imagesCART/goodYear.jpg',
         imageShow: 'imagesCARTshow/goodyear_logo.jpg'
     },
     {
@@ -71,7 +73,7 @@ const table = [
         imageShow: 'imagesCARTshow/ihop_logo.png'
     },
     {
-        image: 'imagesCART/KansasCityChiefs.gif',
+        image: 'imagesCART/KansasCityChiefs.jpg',
         imageShow: 'imagesCARTshow/kansas_city_chiefs_logo.png'
     },
     {
@@ -79,7 +81,7 @@ const table = [
         imageShow: 'imagesCARTshow/levis_logo.png'
     },
     {
-        image: 'imagesCART/Logitech.gif',
+        image: 'imagesCART/Logitech.jpg',
         imageShow: 'imagesCARTshow/logitech_logo.jpg'
     },
     {
@@ -115,7 +117,7 @@ const table = [
         imageShow: 'imagesCARTshow/roxy_logo.png'
     },
     {
-        image: 'imagesCART/SAAB.gif',
+        image: 'imagesCART/SAAB.jpg',
         imageShow: 'imagesCARTshow/saab_logo.jpg'
     },
     {
@@ -175,7 +177,7 @@ btn.addEventListener('click', ()=> {
         stopper = stopper + 1
         randNum = Math.random() * table.length
         total = Math.floor(randNum)
-        console.log(stopper)
+
         if (stopper > 100){
             break
         }
@@ -186,19 +188,20 @@ btn.addEventListener('click', ()=> {
     holder = total
 
 
-    console.log(total)
 
     if (table[total].image != "none"){
         picture.src = `${table[total].image}`
         table[total].image = "none"
     }
     else {
-        picture.src = "images/Sorry.png"
+        picture.src = "imagesCART/Sorry.png"
+        pictureEnd = pictureEnd + 100
+        console.log(pictureEnd)
     }
-    table.forEach(count) // This is SUPPOSED to make it so it'll tell you if you're at the end.
-    if (remaining == table.length - 1){
+    // table.forEach(count) // This is SUPPOSED to make it so it'll tell you if you're at the end.
+    // if (remaining == table.length - 1){
 
-    }
+    // }
     pictureShow.src = "imagesCART/Placeholder.png"
 })
 
@@ -206,6 +209,9 @@ btn.addEventListener('click', ()=> {
 
 btnShow.addEventListener('click', ()=> {
     pictureShow.src = table[total].imageShow
+
+    let test = 0
+
     if (clear == 0){
         pictureShow.style.opacity = 1
         clear = 1
@@ -214,6 +220,12 @@ btnShow.addEventListener('click', ()=> {
         pictureShow.style.opacity = 0
         clear = 0
     }
+    console.log(pictureEnd)
+    if (pictureEnd >= 100){
+        pictureShow.src = "imagesCART/refresh.png"
+        test = 100
+    }
+    console.log(test)
 
 })
 
@@ -273,9 +285,9 @@ function makeText(){
 
 }
 
-function count(){
-    if (table[total].image == "none"){
-        remaining = remaining + 1
-    }
-    console.log(remaining)
-}
+// function count(){
+//     if (table[total].image == "none"){
+//         remaining = remaining + 1
+//     }
+//     console.log(remaining)
+// }
