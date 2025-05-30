@@ -200,7 +200,21 @@ body {
     right: 65px;
     top: 160px;
 }
-
+.hoverboard{
+    position: absolute;
+    right: 65px;
+    top: 240px;
+}
+.speech{
+    position: absolute;
+    right: 65px;
+    top: 280px;
+}
+.slider{
+    position: absolute;
+    right: 65px;
+    top: 320px;
+}
 
 .spinny {
     position: absolute;
