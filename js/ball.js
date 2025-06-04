@@ -432,7 +432,24 @@ function moveLittleDude(){
         littleDudeYPosition = windowHeight - littleDudeHeight
     }
     if (level2 == 5){
-        
+        if (littleDudeYPosition > windowHeight/2){
+            littleDudeYPosition = littleDudeYPosition + ballSpeed
+            if (RPaddleSpeed > 10){
+                RPaddleSpeed = RPaddleSpeed - 2
+            }
+            if (RPaddleSpeed < 9){
+                RPaddleSpeed = RPaddleSpeed - 1
+            }
+        }
+        if (littleDudeYPosition < windowHeight/2){
+            littleDudeYPosition = littleDudeYPosition - ballSpeed
+            if (RPaddleSpeed > 10){
+                RPaddleSpeed = RPaddleSpeed - 2
+            }
+            if (RPaddleSpeed < 9){
+                RPaddleSpeed = RPaddleSpeed - 1
+            }
+        }
     }
     littleDude.style.top = `${littleDudeYPosition}px`
 }
