@@ -451,16 +451,22 @@ function moveLittleDude(){
         }
         if (littleDudeYPosition < windowHeight/2){
             littleDudeYPosition = littleDudeYPosition + ballSpeed
-            if (RPaddleSpeed >= 10){
+            if (RPaddleSpeed >= 15){
                 console.log("10")
                 RPaddleSpeed = RPaddleSpeed - 2
             }
-            if (RPaddleSpeed < 9){
+            if (RPaddleSpeed <= 14){
                 RPaddleSpeed = RPaddleSpeed - 1/4
                 console.log("<9")
                 if (RPaddleSpeed < 0){
                     RPaddleSpeed = 0
                 }
+            }
+            if (RPaddleSpeed <= 10){
+                RPaddleSpeed = RPaddleSpeed - 1/40
+            }
+            if (RPaddleSpeed < 0){
+                RPaddleSpeed = 0
             }
         }
     }
