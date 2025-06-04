@@ -409,7 +409,7 @@ function moveRPaddle(){
         }
 
 
-
+    }
         if (RPaddleYPosition + RPaddleHeight > windowHeight){
         RPaddleYPosition = windowHeight - RPaddleHeight
     }
@@ -436,7 +436,6 @@ function moveRPaddle(){
         playing = false
         clearInterval(easy)
     }
-}
 
 
 
