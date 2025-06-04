@@ -437,7 +437,10 @@ function moveRPaddle(){
         clearInterval(easy)
     }
 
-
+    if (RPaddleSpeed <= 0){
+        RPaddleYPosition = RPaddleYPosition
+        console.log("RPADDLE")
+    }
 
     RPaddle.style.top = `${RPaddleYPosition}px`
 }
