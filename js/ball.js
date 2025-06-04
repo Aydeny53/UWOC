@@ -575,9 +575,11 @@ animate()
 //bottom of the ball is greater than or equal to the bottom of the paddle and left side of the ball is less
 //than or equal to the right side of the paddle then change ball direction
 let count = 0
+let falling = 1
 function littleDudeAnim(){
-    count = count + 1
+
     if(level2 < 5){
+        count = count + 1
         if (count % 10 >= 5){
             littleDude.src = "images/littleDude2.png"
         }
@@ -585,8 +587,14 @@ function littleDudeAnim(){
             littleDude.src = "images/littleDude.png"
         }
     }
+
     if (level2 == 5){
-        if(count % 100 < 99){
+        if(falling == 1){
+            count = 0
+            falling = 0
+        }
+        count = count + 1
+        if(count < 18){
             littleDude.src = "images/littleDudeFall.png"
         }
         else{
