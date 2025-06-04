@@ -418,12 +418,16 @@ function moveRPaddle(){
         level2 = 5
         if (RPaddleYPosition > windowWidth / 2){
             RPaddleYPosition = RPaddleYPosition - RPaddleSpeed
-            RPaddleSpeed = RPaddleSpeed - 1
+            if (RPaddleSpeed > 0){
+                RPaddleSpeed = RPaddleSpeed - 2
+            }
         }
 
         if (RPaddleYPosition < windowWidth / 2){
             RPaddleYPosition = RPaddleYPosition + RPaddleSpeed
-            RPaddleSpeed = RPaddleSpeed - 1
+            if (RPaddleSpeed > 0){
+                RPaddleSpeed = RPaddleSpeed - 2
+            }
         }
     }
 
