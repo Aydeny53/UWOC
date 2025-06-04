@@ -437,10 +437,10 @@ function moveRPaddle(){
         clearInterval(easy)
     }
 
-    if (RPaddleSpeed <= 0){
-        RPaddleYPosition = RPaddleYPosition
-        console.log("RPADDLE")
-    }
+    // if (RPaddleSpeed <= 0){
+    //     RPaddleYPosition = RPaddleYPosition
+    //     console.log("RPADDLE")
+    // }
 
     RPaddle.style.top = `${RPaddleYPosition}px`
 }
@@ -451,19 +451,22 @@ function moveLittleDude(){
         littleDudeYPosition = windowHeight - littleDudeHeight
     }
 
-    if (RPaddleYPosition > windowWidth / 2){
-        RPaddleYPosition = RPaddleYPosition - RPaddleSpeed
-        if (RPaddleSpeed > 0){
-            RPaddleSpeed = RPaddleSpeed - 2
+    if (level2 == 5){
+        if (littleDudeYPosition > windowWidth / 2){
+            littleDudeYPosition = littleDudeYPosition - RPaddleSpeed
+            if (RPaddleSpeed > 0){
+                RPaddleSpeed = RPaddleSpeed - 2
+            }
+        }
+
+        if (littleDudeYPosition < windowWidth / 2){
+            littleDudeYPosition = littleDudeYPosition + RPaddleSpeed
+            if (RPaddleSpeed > 0){
+                RPaddleSpeed = RPaddleSpeed - 2
+            }
         }
     }
 
-    if (RPaddleYPosition < windowWidth / 2){
-        RPaddleYPosition = RPaddleYPosition + RPaddleSpeed
-        if (RPaddleSpeed > 0){
-            RPaddleSpeed = RPaddleSpeed - 2
-        }
-    }
     littleDude.style.top = `${littleDudeYPosition}px`
 }
 
