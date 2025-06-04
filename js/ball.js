@@ -586,7 +586,7 @@ function littleDudeAnim(){
         }
     }
     if (level2 == 5){
-        if(count < 100){
+        if(count % 100 < 99){
             littleDude.src = "images/littleDudeFall.png"
         }
         else{
