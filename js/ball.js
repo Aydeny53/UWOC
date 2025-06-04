@@ -466,7 +466,7 @@ function moveLittleDude(){
             }
             littleDudeYPosition = littleDudeYPosition + RPaddleSpeed/10
             if (RPaddleSpeed >= 10){
-                RPaddleSpeed = RPaddleSpeed - 3/2
+                RPaddleSpeed = RPaddleSpeed - 2
             }
             if (RPaddleSpeed <= 9){
                 RPaddleSpeed = RPaddleSpeed - (1/10)
