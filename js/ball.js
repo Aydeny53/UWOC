@@ -596,7 +596,7 @@ function littleDudeAnim(){
             falling = 0
         }
         count = count + 1
-        if(count < 45){
+        if(count < 55){
             littleDude.src = "images/littleDudeFall.png"
         }
         else{
