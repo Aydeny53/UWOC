@@ -374,7 +374,7 @@ function movePaddle(){
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
-let randomNum = Math.floor(Math.random() * 0) + 1
+let randomNum = Math.floor(Math.random() * 9) + 1
 function moveRPaddle(){
 
     if (level2 < 5){
@@ -393,7 +393,7 @@ function moveRPaddle(){
     console.log(randomNum)
 
 
-    if (level2 == '1' && score2 == randomNum){ //THIS IS SUPPOSED TO MAKE IT WINNABLE
+    if (level2 == '4' && score2 == randomNum){ //THIS IS SUPPOSED TO MAKE IT WINNABLE
         console.log("Inside statement")
         console.log(randomNum)
         ballSpeed = 4
