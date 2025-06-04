@@ -457,13 +457,14 @@ function moveLittleDude(){
             }
             if (RPaddleSpeed <= 14){
                 RPaddleSpeed = RPaddleSpeed - 1/4
-                console.log("<9")
+                console.log("<14")
                 if (RPaddleSpeed < 0){
                     RPaddleSpeed = 0
                 }
             }
             if (RPaddleSpeed <= 10){
-                RPaddleSpeed = RPaddleSpeed - 1/40
+                console.log("<10")
+                RPaddleSpeed = RPaddleSpeed - 1/400
             }
             if (RPaddleSpeed < 0){
                 RPaddleSpeed = 0
