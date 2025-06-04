@@ -211,11 +211,13 @@ function moveBall() {
         increaseScore()
 
     }
-
-    if ((ballBottom >= RPaddleTop) && (ballTop <= RPaddleBottom) &&
-    (ballRight >=  windowWidth - (RPaddleLeft + RPaddleWidth * 2)) && (ballXDirection == 1)) {
-        ballXDirection = ballXDirection * -1
+    if(level2 < 5){
+        if ((ballBottom >= RPaddleTop) && (ballTop <= RPaddleBottom) &&
+            (ballRight >=  windowWidth - (RPaddleLeft + RPaddleWidth * 2)) && (ballXDirection == 1)) {
+            ballXDirection = ballXDirection * -1
+        }
     }
+
 
 
 }
