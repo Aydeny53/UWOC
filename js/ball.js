@@ -577,12 +577,18 @@ animate()
 let count = 0
 function littleDudeAnim(){
     count = count + 1
-    if (count % 10 >= 5){
-        littleDude.src = "images/littleDude2.png"
+    if(level2 < 5){
+        if (count % 10 >= 5){
+            littleDude.src = "images/littleDude2.png"
+        }
+        else {
+            littleDude.src = "images/littleDude.png"
+        }
     }
-    else {
-        littleDude.src = "images/littleDude.png"
+    if (level2 == 5){
+        littleDude.src = "images/littleDudeFall.png"
     }
+
     // littleDude.classList.toggle('active')
 
 }
