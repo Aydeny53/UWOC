@@ -422,7 +422,8 @@ function moveRPaddle(){
         }
 
         if (RPaddleYPosition < windowWidth / 2){
-            
+            RPaddleYPosition = RPaddleYPosition + RPaddleSpeed
+            RPaddleSpeed = RPaddleSpeed - 1
         }
     }
 
