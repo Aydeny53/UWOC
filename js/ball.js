@@ -397,7 +397,7 @@ function moveRPaddle(){
         console.log("Inside statement")
         console.log(randomNum)
         ballSpeed = 4
-        RPaddleYPosition = Math.floor(Math.random() * windowHeight)
+        RPaddleYPosition = Math.floor(Math.random() * windowHeight + 50)
         RPaddleHeight = RPaddleHeight - 1
         RPaddle.remove()
         document.body.appendChild(RPaddle)
@@ -439,7 +439,7 @@ function moveLittleDude(){
         littleDudeYPosition = windowHeight - littleDudeHeight
     }
 
-    // if(littleDudeYPosition - littleDudeHeight < 0){
+    // if(littleDudeYPosition - littleDudeHeight < -100){
     //     littleDudeYPosition = 0
     // }
 
