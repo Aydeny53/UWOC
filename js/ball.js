@@ -416,6 +416,14 @@ function moveRPaddle(){
 
     if (RPaddleHeight <= 0){
         level2 = 5
+        if (RPaddleYPosition > windowWidth / 2){
+            RPaddleYPosition = RPaddleYPosition - RPaddleSpeed
+            RPaddleSpeed = RPaddleSpeed - 1
+        }
+
+        if (RPaddleYPosition < windowWidth / 2){
+            
+        }
     }
 
     if (ballXPosition >= windowWidth - ballRadius*3 + 5){
@@ -423,6 +431,9 @@ function moveRPaddle(){
         playing = false
         clearInterval(easy)
     }
+
+
+
     RPaddle.style.top = `${RPaddleYPosition}px`
 }
 
