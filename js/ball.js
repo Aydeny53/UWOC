@@ -445,12 +445,12 @@ function moveLittleDude(){
         littleDudeYPosition = littleDudeYPosition
         if (littleDudeYPosition >= windowHeight/2){
             if(something == 1){
-                littleDudeYPosition = littleDudeYPosition + windowHeight / 4
+                littleDudeYPosition = littleDudeYPosition + windowHeight / 6
                 something = 0
             }
-            littleDudeYPosition = littleDudeYPosition - RPaddleSpeed/10
+            littleDudeYPosition = littleDudeYPosition - RPaddleSpeed/8
             if (RPaddleSpeed >= 10){
-                RPaddleSpeed = RPaddleSpeed - 3/2
+                RPaddleSpeed = RPaddleSpeed - 4/2
             }
             if (RPaddleSpeed <= 10){
                 RPaddleSpeed = RPaddleSpeed - (1/10)
@@ -464,11 +464,11 @@ function moveLittleDude(){
                 littleDudeYPosition = littleDudeYPosition - windowHeight / 6
                 something = 0
             }
-            littleDudeYPosition = littleDudeYPosition + RPaddleSpeed/10
+            littleDudeYPosition = littleDudeYPosition + RPaddleSpeed/8
             if (RPaddleSpeed >= 10){
-                RPaddleSpeed = RPaddleSpeed - 2
+                RPaddleSpeed = RPaddleSpeed - 4/2
             }
-            if (RPaddleSpeed <= 9){
+            if (RPaddleSpeed <= 10){
                 RPaddleSpeed = RPaddleSpeed - (1/10)
                 if (RPaddleSpeed < 0){
                     RPaddleSpeed = 0
