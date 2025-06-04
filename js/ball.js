@@ -473,6 +473,8 @@ function moveLittleDude(){
                     RPaddleSpeed = 0
                 }
             }
+            RPaddleYPosition = 0
+            RPaddle.style.top = `${RPaddleYPosition}px`
         }
     }
     littleDude.style.top = `${littleDudeYPosition}px`
