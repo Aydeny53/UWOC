@@ -436,9 +436,9 @@ function moveLittleDude(){
         littleDudeYPosition = windowHeight - littleDudeHeight
     }
 
-    if(littleDudeYPosition - littleDudeHeight < 0){
-        littleDudeYPosition = 0
-    }
+    // if(littleDudeYPosition - littleDudeHeight < 0){
+    //     littleDudeYPosition = 0
+    // }
 
     if (level2 == 5){
         littleDudeYPosition = littleDudeYPosition
@@ -451,7 +451,7 @@ function moveLittleDude(){
             if (RPaddleSpeed >= 10){
                 RPaddleSpeed = RPaddleSpeed - 3/2
             }
-            if (RPaddleSpeed <= 9){
+            if (RPaddleSpeed <= 10){
                 RPaddleSpeed = RPaddleSpeed - (1/10)
                 if (RPaddleSpeed < 0){
                     RPaddleSpeed = 0
@@ -460,14 +460,14 @@ function moveLittleDude(){
         }
         if (littleDudeYPosition < windowHeight/2){
             if(something == 1){
-                littleDudeYPosition = littleDudeYPosition - windowHeight / 4
+                littleDudeYPosition = littleDudeYPosition - windowHeight / 6
                 something = 0
             }
             littleDudeYPosition = littleDudeYPosition + RPaddleSpeed/10
             if (RPaddleSpeed >= 10){
                 RPaddleSpeed = RPaddleSpeed - 3/2
             }
-            if (RPaddleSpeed < 9){
+            if (RPaddleSpeed <= 9){
                 RPaddleSpeed = RPaddleSpeed - (1/10)
                 if (RPaddleSpeed < 0){
                     RPaddleSpeed = 0
