@@ -372,7 +372,7 @@ function movePaddle(){
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
-let randomNum = Math.floor(Math.random() * 9) + 1
+let randomNum = Math.floor(Math.random() * 0) + 1
 function moveRPaddle(){
 
 
