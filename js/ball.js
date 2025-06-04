@@ -375,13 +375,14 @@ function movePaddle(){
 let randomNum = Math.floor(Math.random() * 0) + 1
 function moveRPaddle(){
 
+    if (level2 < 5){
+        if(RPaddleYPosition >= 0){
+            RPaddleYPosition = ballYPosition - RPaddleSpeed * 3
+        }
 
-    if(RPaddleYPosition >= 0){
-        RPaddleYPosition = ballYPosition - RPaddleSpeed * 3
-    }
-
-    if( RPaddleYPosition < 0){
-        RPaddleYPosition = 1
+        if( RPaddleYPosition < 0){
+            RPaddleYPosition = 1
+        }
     }
 
     // let random = Math.random() * 10
