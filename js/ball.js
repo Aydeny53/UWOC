@@ -426,7 +426,7 @@ function moveRPaddle(){
     }
     RPaddle.style.top = `${RPaddleYPosition}px`
 }
-
+let something = 1
 function moveLittleDude(){
     if (level2 < 5){
         littleDudeYPosition = RPaddleYPosition + RPaddleHeight/4
@@ -438,6 +438,10 @@ function moveLittleDude(){
     if (level2 == 5){
         littleDudeYPosition = littleDudeYPosition
         if (littleDudeYPosition >= windowHeight/2){
+            if(something == 1){
+                littleDudeYPosition = littleDudeYPosition + windowHeight / 4
+                something = 0
+            }
             littleDudeYPosition = littleDudeYPosition - RPaddleSpeed/10
             if (RPaddleSpeed > 10){
                 RPaddleSpeed = RPaddleSpeed - 1
@@ -450,6 +454,10 @@ function moveLittleDude(){
             }
         }
         if (littleDudeYPosition < windowHeight/2){
+            if(something == 1){
+                littleDudeYPosition = littleDudeYPosition - windowHeight / 4
+                something = 0
+            }
             littleDudeYPosition = littleDudeYPosition + RPaddleSpeed/10
             if (RPaddleSpeed > 10){
                 RPaddleSpeed = RPaddleSpeed - 1
