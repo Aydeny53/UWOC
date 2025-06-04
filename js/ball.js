@@ -400,9 +400,9 @@ function moveRPaddle(){
         document.body.appendChild(RPaddle)
         createRPaddle()
 
-        if(RPaddleYPosition >= 0){
-            RPaddleYPosition = ballYPosition - RPaddleSpeed * 3
-        }
+        // if(RPaddleYPosition >= 0){
+        //     RPaddleYPosition = ballYPosition - RPaddleSpeed * 3
+        // }
 
         if( RPaddleYPosition < 0){
             RPaddleYPosition = 1
