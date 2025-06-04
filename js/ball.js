@@ -61,10 +61,10 @@ const littleDudeWidth = windowWidth - (windowWidth - RPaddleXPosition)
 const littleDudeHeight = 110
 const ballRadius = 20
 
-let random = Math.random() * 5
+// let random = Math.random() * 5
 
-let randomNum = Math.ceil(random) + 2
-console.log(randomNum)
+// let randomNum = Math.floor(random) + 2
+// console.log(randomNum)
 
 
 
@@ -254,6 +254,7 @@ function createRPaddle(){
     RPaddle.style.right = `${RPaddleXPosition}px`
     RPaddle.style.top = `${RPaddleYPosition}px`
     RPaddle.style.overflow = 'hidden'
+    RPaddle.style.transition = "ease .1s"
 }
 
 
@@ -371,6 +372,7 @@ function movePaddle(){
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
+let randomNum = Math.floor(Math.random() * 9) + 1
 function moveRPaddle(){
 
 
@@ -382,31 +384,45 @@ function moveRPaddle(){
         RPaddleYPosition = 1
     }
 
+    // let random = Math.random() * 10
+    // let randomNum = Math.floor(random) + 2
+
+    console.log(randomNum)
 
 
-    if (level2 == '1' && score2 == randomNum + '2'){
-        playing = false
-        if (ballYDirection < 0){
-            RPaddleYPosition = ballYPosition + 150
-        }
-        else if(ballYDirection > 0){
-            RPaddleYPosition = ballYPosition - (RPaddleHeight + 150)
+    if (level2 == '1' && score2 == randomNum){ //THIS IS SUPPOSED TO MAKE IT WINNABLE
+        console.log("Inside statement")
+        console.log(randomNum)
+        ballSpeed = 5
+        RPaddleYPosition = Math.floor(Math.random() * windowHeight)
+        RPaddleHeight = RPaddleHeight - 1
+        RPaddle.remove()
+        document.body.appendChild(RPaddle)
+        createRPaddle()
+
+        // if(RPaddleYPosition >= 0){
+        //     RPaddleYPosition = ballYPosition - RPaddleSpeed * 3
+        // }
+
+        if( RPaddleYPosition < 0){
+            RPaddleYPosition = 1
         }
 
-        if (ballXPosition >= windowWidth - ballRadius + 5){
-            ballSpeed = 0
-            playing = false
-        }
+
     }
         if (RPaddleYPosition + RPaddleHeight > windowHeight){
         RPaddleYPosition = windowHeight - RPaddleHeight
     }
 
+    if (RPaddleHeight <= 0){
+        level2 = 5
+    }
 
-
-
-
-
+    if (ballXPosition >= windowWidth - ballRadius*3 + 5){
+        ballSpeed = 0
+        playing = false
+        clearInterval(easy)
+    }
     RPaddle.style.top = `${RPaddleYPosition}px`
 }
 

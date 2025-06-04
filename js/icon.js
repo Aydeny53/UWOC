@@ -213,6 +213,7 @@ btn.addEventListener('click', ()=> {
         stopper = stopper + 1
         randNum = Math.random() * table.length
         total = Math.floor(randNum)
+        console.log(total)
 
         if (stopper > 100){
             break
