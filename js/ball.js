@@ -432,13 +432,16 @@ function moveLittleDude(){
         littleDudeYPosition = windowHeight - littleDudeHeight
     }
     if (level2 == 5){
-        if (littleDudeYPosition > windowHeight/2){
+        if (littleDudeYPosition >= windowHeight/2){
             littleDudeYPosition = littleDudeYPosition + ballSpeed
             if (RPaddleSpeed > 10){
                 RPaddleSpeed = RPaddleSpeed - 2
             }
             if (RPaddleSpeed < 9){
                 RPaddleSpeed = RPaddleSpeed - 1
+                if (RPaddleSpeed < 0){
+                    RPaddleSpeed = 0
+                }
             }
         }
         if (littleDudeYPosition < windowHeight/2){
@@ -448,6 +451,9 @@ function moveLittleDude(){
             }
             if (RPaddleSpeed < 9){
                 RPaddleSpeed = RPaddleSpeed - 1
+                if (RPaddleSpeed < 0){
+                    RPaddleSpeed = 0
+                }
             }
         }
     }
