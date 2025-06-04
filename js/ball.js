@@ -586,7 +586,13 @@ function littleDudeAnim(){
         }
     }
     if (level2 == 5){
-        littleDude.src = "images/littleDudeFall.png"
+        if(count < 100){
+            littleDude.src = "images/littleDudeFall.png"
+        }
+        else{
+            littleDude.src = "images/littleDudeFall2.png"
+        }
+
     }
 
     // littleDude.classList.toggle('active')
