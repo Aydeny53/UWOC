@@ -420,7 +420,7 @@ function moveRPaddle(){
 
     }
 
-    if (ballXPosition >= windowWidth - ballRadius*3 + 5){
+    if (ballXPosition >= windowWidth - ballRadius*3 - 5){
         ballSpeed = 0
         playing = false
         clearInterval(easy)
