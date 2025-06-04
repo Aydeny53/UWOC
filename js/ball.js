@@ -582,7 +582,7 @@ function littleDudeAnim(){
 
     if(level2 < 5){
         count = count + 1
-        if (count % 10 >= 5){
+        if (count % 15 >= 7){
             littleDude.src = "images/littleDude2.png"
         }
         else {
