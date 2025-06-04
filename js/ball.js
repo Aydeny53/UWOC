@@ -393,7 +393,7 @@ function moveRPaddle(){
     if (level2 == '1' && score2 == randomNum){ //THIS IS SUPPOSED TO MAKE IT WINNABLE
         console.log("Inside statement")
         console.log(randomNum)
-        ballSpeed = 2
+        ballSpeed = 4
         RPaddleYPosition = Math.floor(Math.random() * windowHeight)
         RPaddleHeight = RPaddleHeight - 1
         RPaddle.remove()
@@ -451,7 +451,7 @@ function moveLittleDude(){
             if (RPaddleSpeed >= 10){
                 RPaddleSpeed = RPaddleSpeed - 3/2
             }
-            if (RPaddleSpeed < 9){
+            if (RPaddleSpeed <= 9){
                 RPaddleSpeed = RPaddleSpeed - (1/10)
                 if (RPaddleSpeed < 0){
                     RPaddleSpeed = 0
