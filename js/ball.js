@@ -416,6 +416,7 @@ function moveRPaddle(){
 
     if (RPaddleHeight <= 0){
         level2 = 5
+        
     }
 
     if (ballXPosition >= windowWidth - ballRadius*3 + 5){
@@ -432,7 +433,7 @@ function moveLittleDude(){
         littleDudeYPosition = windowHeight - littleDudeHeight
     }
     if (level2 == 5){
-        littleDudeYPosition = littleDudeYPosition - RPaddleYPosition
+        littleDudeYPosition = littleDudeYPosition
         if (littleDudeYPosition >= windowHeight/2){
             littleDudeYPosition = littleDudeYPosition + ballSpeed
             if (RPaddleSpeed > 10){
