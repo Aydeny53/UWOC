@@ -439,44 +439,26 @@ function moveLittleDude(){
         littleDudeYPosition = littleDudeYPosition
         if (littleDudeYPosition >= windowHeight/2){
             littleDudeYPosition = littleDudeYPosition - ballSpeed
-            if (RPaddleSpeed >= 15){
-                console.log("10")
-                RPaddleSpeed = RPaddleSpeed - 2
+            if (RPaddleSpeed > 10){
+                RPaddleSpeed = RPaddleSpeed - 1
             }
-            if (RPaddleSpeed <= 14){
-                RPaddleSpeed = RPaddleSpeed - 1/4
-                console.log("<14")
+            if (RPaddleSpeed < 9){
+                RPaddleSpeed = RPaddleSpeed - (1/20)
                 if (RPaddleSpeed < 0){
                     RPaddleSpeed = 0
                 }
-            }
-            if (RPaddleSpeed <= 10){
-                console.log("<10")
-                RPaddleSpeed = RPaddleSpeed - 1/400
-            }
-            if (RPaddleSpeed < 0){
-                RPaddleSpeed = 0
             }
         }
         if (littleDudeYPosition < windowHeight/2){
             littleDudeYPosition = littleDudeYPosition + ballSpeed
-            if (RPaddleSpeed >= 15){
-                console.log("10")
-                RPaddleSpeed = RPaddleSpeed - 2
+            if (RPaddleSpeed > 10){
+                RPaddleSpeed = RPaddleSpeed - 1
             }
-            if (RPaddleSpeed <= 14){
-                RPaddleSpeed = RPaddleSpeed - 1/4
-                console.log("<14")
+            if (RPaddleSpeed < 9){
+                RPaddleSpeed = RPaddleSpeed -(1/20)
                 if (RPaddleSpeed < 0){
                     RPaddleSpeed = 0
                 }
-            }
-            if (RPaddleSpeed <= 10){
-                console.log("<10")
-                RPaddleSpeed = RPaddleSpeed - 1/400
-            }
-            if (RPaddleSpeed < 0){
-                RPaddleSpeed = 0
             }
         }
     }
