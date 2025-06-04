@@ -393,12 +393,9 @@ function moveRPaddle(){
     if (level2 == '1' && score2 == randomNum){ //THIS IS SUPPOSED TO MAKE IT WINNABLE
         console.log("Inside statement")
         console.log(randomNum)
-        ballSpeed = 3
+        ballSpeed = 5
         RPaddleYPosition = Math.floor(Math.random() * windowHeight)
-        if (RPaddleHeight > 0){
-            RPaddleHeight = RPaddleHeight - 1
-        }
-
+        RPaddleHeight = RPaddleHeight - 1
         RPaddle.remove()
         document.body.appendChild(RPaddle)
         createRPaddle()
@@ -419,22 +416,6 @@ function moveRPaddle(){
 
     if (RPaddleHeight <= 0){
         level2 = 5
-        RPaddle.remove()
-        document.body.appendChild(RPaddle)
-        createRPaddle()
-        // if (RPaddleYPosition > windowWidth / 2){
-        //     RPaddleYPosition = RPaddleYPosition - RPaddleSpeed
-        //     if (RPaddleSpeed > 0){
-        //         RPaddleSpeed = RPaddleSpeed - 2
-        //     }
-        // }
-
-        // if (RPaddleYPosition < windowWidth / 2){
-        //     RPaddleYPosition = RPaddleYPosition + RPaddleSpeed
-        //     if (RPaddleSpeed > 0){
-        //         RPaddleSpeed = RPaddleSpeed - 2
-        //     }
-        // }
     }
 
     if (ballXPosition >= windowWidth - ballRadius*3 + 5){
@@ -442,12 +423,6 @@ function moveRPaddle(){
         playing = false
         clearInterval(easy)
     }
-
-    // if (RPaddleSpeed <= 0){
-    //     RPaddleYPosition = RPaddleYPosition
-    //     console.log("RPADDLE")
-    // }
-
     RPaddle.style.top = `${RPaddleYPosition}px`
 }
 
@@ -456,24 +431,6 @@ function moveLittleDude(){
     if (littleDudeYPosition + littleDudeHeight > windowHeight){
         littleDudeYPosition = windowHeight - littleDudeHeight
     }
-
-    if (level2 == 5){
-        console.log("level 5")
-        if (littleDudeYPosition > windowWidth / 2){
-            littleDudeYPosition = littleDudeYPosition - RPaddleSpeed
-            if (RPaddleSpeed > 0){
-                RPaddleSpeed = RPaddleSpeed - 2
-            }
-        }
-
-        if (littleDudeYPosition < windowWidth / 2){
-            littleDudeYPosition = littleDudeYPosition + RPaddleSpeed
-            if (RPaddleSpeed > 0){
-                RPaddleSpeed = RPaddleSpeed - 2
-            }
-        }
-    }
-
     littleDude.style.top = `${littleDudeYPosition}px`
 }
 
