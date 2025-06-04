@@ -395,7 +395,10 @@ function moveRPaddle(){
         console.log(randomNum)
         ballSpeed = 3
         RPaddleYPosition = Math.floor(Math.random() * windowHeight)
-        RPaddleHeight = RPaddleHeight - 1
+        if (RPaddleHeight > 0){
+            RPaddleHeight = RPaddleHeight - 1
+        }
+
         RPaddle.remove()
         document.body.appendChild(RPaddle)
         createRPaddle()
