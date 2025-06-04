@@ -416,19 +416,19 @@ function moveRPaddle(){
 
     if (RPaddleHeight <= 0){
         level2 = 5
-        if (RPaddleYPosition > windowWidth / 2){
-            RPaddleYPosition = RPaddleYPosition - RPaddleSpeed
-            if (RPaddleSpeed > 0){
-                RPaddleSpeed = RPaddleSpeed - 2
-            }
-        }
+        // if (RPaddleYPosition > windowWidth / 2){
+        //     RPaddleYPosition = RPaddleYPosition - RPaddleSpeed
+        //     if (RPaddleSpeed > 0){
+        //         RPaddleSpeed = RPaddleSpeed - 2
+        //     }
+        // }
 
-        if (RPaddleYPosition < windowWidth / 2){
-            RPaddleYPosition = RPaddleYPosition + RPaddleSpeed
-            if (RPaddleSpeed > 0){
-                RPaddleSpeed = RPaddleSpeed - 2
-            }
-        }
+        // if (RPaddleYPosition < windowWidth / 2){
+        //     RPaddleYPosition = RPaddleYPosition + RPaddleSpeed
+        //     if (RPaddleSpeed > 0){
+        //         RPaddleSpeed = RPaddleSpeed - 2
+        //     }
+        // }
     }
 
     if (ballXPosition >= windowWidth - ballRadius*3 + 5){
@@ -449,6 +449,20 @@ function moveLittleDude(){
     littleDudeYPosition = RPaddleYPosition + RPaddleHeight/4
     if (littleDudeYPosition + littleDudeHeight > windowHeight){
         littleDudeYPosition = windowHeight - littleDudeHeight
+    }
+
+    if (RPaddleYPosition > windowWidth / 2){
+        RPaddleYPosition = RPaddleYPosition - RPaddleSpeed
+        if (RPaddleSpeed > 0){
+            RPaddleSpeed = RPaddleSpeed - 2
+        }
+    }
+
+    if (RPaddleYPosition < windowWidth / 2){
+        RPaddleYPosition = RPaddleYPosition + RPaddleSpeed
+        if (RPaddleSpeed > 0){
+            RPaddleSpeed = RPaddleSpeed - 2
+        }
     }
     littleDude.style.top = `${littleDudeYPosition}px`
 }
