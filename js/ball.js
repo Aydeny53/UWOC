@@ -437,22 +437,22 @@ function moveLittleDude(){
     }
     if (level2 == 5){
         littleDudeYPosition = littleDudeYPosition
-        if (littleDudeYPosition >= windowHeight/2){
-            littleDudeYPosition = littleDudeYPosition - ballSpeed
-            if (RPaddleSpeed > 10){
-                RPaddleSpeed = RPaddleSpeed - 1
-            }
-            if (RPaddleSpeed < 9){
-                RPaddleSpeed = RPaddleSpeed - (1/20)
-                if (RPaddleSpeed < 0){
-                    RPaddleSpeed = 0
-                }
-            }
-        }
-        if (littleDudeYPosition < windowHeight/2){
+        // if (littleDudeYPosition >= windowHeight/2){
+        //     littleDudeYPosition = littleDudeYPosition - ballSpeed
+        //     if (RPaddleSpeed > 10){
+        //         RPaddleSpeed = RPaddleSpeed - 1
+        //     }
+        //     if (RPaddleSpeed < 9){
+        //         RPaddleSpeed = RPaddleSpeed - (1/20)
+        //         if (RPaddleSpeed < 0){
+        //             RPaddleSpeed = 0
+        //         }
+        //     }
+        // }
+        if (littleDudeYPosition < windowHeight){
             littleDudeYPosition = littleDudeYPosition + ballSpeed
             if (RPaddleSpeed > 10){
-                RPaddleSpeed = RPaddleSpeed - 1
+                RPaddleSpeed = RPaddleSpeed - 2
             }
             if (RPaddleSpeed < 9){
                 RPaddleSpeed = RPaddleSpeed - (1/20)
