@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(90deg, plum, powderblue);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin: 10px;
+    border-radius: 50px;
+    flex: 1;
+    color: black;
+    cursor: pointer;
+    position: relative; /* If anything inside this is absolute, position is relative to this item*/
+    transition: all 1s ease-out; /*Is controlling flex and tranform*/
+    top: 50px;
+}
+
+
+.panel h3 { /* Go into panel class, if find h3 tag, do something to it */
+    font-size: 24px;
+    position: absolute; /*Need this to use 20px from left, 20px from bottom */
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity .4s ease-in .5s ; /*doesnt happen until 'all' transition is finished*/
+}
+
+
+.panel.active {
+    flex: 10;
+    transform: rotate(360deg);
+}
+
+.panel.active h3 {
+    opacity: 1;
+}

@@ -1,0 +1,43 @@
+if i want github to reflect my changes so then im gonna do:
+1: git add .
+2: git commit -m "TEXT"
+3: git push
+4: it'll ask for my password
+
+
+*Fonts
+script src="https://kit.fontawesome.com/c513779648.js"
+crossorigin="anonymous"></script>
+
+
+Java makes website do stuff
+html puts the stuff on the site
+css makes it look nice
+
+
+<br> Makes the text start a new line
+
+
+If I want to make something positioned relative to another item, use position: relative;
+
+display: flex lets you center items
+
+
+
+***alt + z : Makes it so text doesnt run off sides of coding screen
+
+
+font-family: inherit;  = Makes whatever inside button use font of whatever rest of website is using
+The Prankster
+The Dumb
+
+
+*****  emmet - (Trigger expansion on tab) - VERY IMPORTANT!!! THIS LETS YOU USE USE TAB TO FILL IN STUFF WHEN HITTING TAB!!! TOGGLE IN SETTINGS!!!
+
+
+seal = always round up
+floor = always round down
+round = round normally
+
+
+look at ball.html to see how to center divs

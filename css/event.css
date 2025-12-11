@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: linear-gradient(90deg, plum, powderblue);
+}
+
+
+.box {
+
+    background-color: #bb33bb;
+    color: white;
+    height: 50px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#element1 {
+    background-color: powderblue;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+
+#element2 {
+    background-color: powderblue;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#element3 {
+    background-image: url('images/little.png');
+    /* background-color: plum; */
+    position: absolute;
+    right: 0px;
+    bottom: 45px;
+    margin: 0;
+}
+.little {
+    height: 100px;
+    width: 220px;
+}
+
+#element4 {
+    background-color: plum;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+
+    }
+    to {
+        transform: rotate(360deg)
+
+    }
+}
+
+#element5 {
+    /* background-color: #bb33bb; */
+    animation: spin .3s linear infinite; /*name of keyframe anim, how long anim will take, anim type, how long it will run*/
+    animation-play-state: paused;
+}

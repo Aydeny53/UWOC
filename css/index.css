@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(90deg, plum, powderblue);
+    display: flex; /* Uses flexbox; Responds to different screen sizes */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center */
+    height: 100vh; /* Setting body height to 100%; Need for align items to work*/
+    /* top: 100;
+    left: 100; */
+    margin: 0;
+}
+
+.nav{
+    display:flex;
+    left: 20px;
+    top:20px;
+    right: 86.5%;
+
+    background-color: #8d80ad;
+}
+
+.nav a {
+    color: rgba(0,0,0, 0.25);
+}
+
+.topHeader a {
+    position: fixed;
+    background-color: purple;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    padding: 20px 0;
+
+
+}
+
+
+.welcome {
+
+    font-size: 86px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: rgba(60,60,60,0.8);
+    top: 65px;
+}
+
+.peak {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: rgba(60,60,60,0.8);
+    top: 165px;
+
+}
+
+.menu {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    cursor:pointer;
+    border-radius: 6%;
+    height: 50px;
+
+
+    background-color: #8d80ad;
+    font-weight: bold;
+    font-size: 15px;
+    left: -46%;
+    top: -25%;
+    padding: 10px 6px;
+    /* animation-timing-function: linear(0 0%, 0.25 75%, 1 100%); */
+    transition: ease-out .3s;
+}
+
+.menu h3 {
+    top: 0;
+    left: 0;
+    color: rgba(0,0,0, 0.15);
+}
+
+.menu.active h3 {
+    position: absolute;
+
+    left: 0px;
+    top: 20px;
+}
+
+.menu.active h3 {
+    transition: ease .7s;
+    background-color: rgba(0,0,0,.08);
+    padding: 7px 44.5%;
+
+}
+
+.menu.active {
+
+    left: -30%;
+    top: 5%;
+    padding: 150px 225px;
+    transform: rotate(25deg);
+    color: rgba(0,0,0, 0.45);
+    transition: ease .5s;
+}
+
+.menu.active.doubleActive {
+
+    transform: rotate(15deg);
+    color: rgba(0,0,0, 0.45);
+    transition: ease-out .3s;
+    left: -35%;
+    top: 8%;
+}
+.menu.active.doubleActive.tripleActive {
+
+    transform: rotate(0deg);
+    left: -28%;
+    top: 2%;
+
+}
+
+.menu.active.doubleActive.quadActive {
+
+    color: rgba(0,0,0, 0.25);
+    left: -31%;
+    top: 0%;
+
+}
+
+
+.links ul{
+    color: rgba(0,0,0,0);
+    position: absolute;
+    right: 200%;
+    top: 0px;
+    margin: 25px;
+    transition: ease 2s;
+}
+
+.links.active ul{
+    position:absolute;
+
+    color: rgba(0,0,0,0);
+    top: 50px;
+    left: 0px;
+    margin: 15px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+
+
+    min-width: 100%;
+    min-height: 100%;
+}
+.links a{
+    color: rgba(0,0,0,0);
+    transition: ease-out 1s;
+    text-decoration: none;
+}
+.links.active a {
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+
+}
+
+.sounds{
+    position: absolute;
+    right: 65px;
+    top: 0;
+}
+.art{
+    position: absolute;
+    right: 65px;
+    top: 40px;
+}
+.ball{
+    position: absolute;
+    right: 65px;
+    top: 80px;
+}
+.slider {
+    position:absolute;
+    right: 65px;
+    top: 120px;
+}
+.icon{
+    position:absolute;
+    right: 65px;
+    top: 200px;
+}
+.relaxer {
+    position: absolute;
+    right: 65px;
+    top: 160px;
+}
+.hoverboard{
+    position: absolute;
+    right: 65px;
+    top: 240px;
+}
+.speech{
+    position: absolute;
+    right: 65px;
+    top: 280px;
+}
+
+
+.spinny {
+    position: absolute;
+    align-items: center;
+    height: 100px;
+    width:20px;
+    justify-content: center;
+    background-color: red;
+    z-index:5;
+    animation: spinny linear 2s;
+}
+
+.pointer {
+    position: absolute;
+    height:20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+@keyframes spinny{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
