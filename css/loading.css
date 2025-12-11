@@ -15,7 +15,7 @@ body {
 
 
 .bg {
-    background-image: url('../Images4Website/TimeWasted.png');
+    background-image: url('../Images4Website/TimeWasted.gif');
     background-size: contain;
     background position: center;
     background-repeat: no-repeat;
@@ -28,6 +28,7 @@ body {
     filter: blur(50px);
     z-index: -1;
     bottom: 0;
+    right: 0px;
 }
 
 .loading-text {
