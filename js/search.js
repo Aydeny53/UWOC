@@ -16,6 +16,7 @@ submitButton.addEventListener("click", myFunction)
 function myFunction(){
     let userInput = document.querySelector('#Tasha');
     let message = document.querySelector('#Message');
+    document.body.removeChild(peak)
     if (userInput.value == "hi" || userInput.value == "Hi" || userInput.value == "hello" || userInput.value == "Hello") {
             message.innerHTML = "HI THEREEEEEE ";
     }
