@@ -1,3 +1,4 @@
+UWOC
 const little = document.querySelector('.little')
 const food = document.querySelector('.food')
 const text = document.querySelector('.text')
