@@ -39,15 +39,12 @@ function myFunction(){
         message.innerHTML = "Wow, I can't believe you got that honestly. Yippee! You better have sent a Hello...";
         document.body.appendChild(peak)
         peak.style.position = 'absolute'
-        // peak.style.backgroundColor = 'black'
-        // peak.style.left = '100px'
         peak.style.top = '35px'
         peak.style.width = '250px'
         peak.style.height = '250px'
         peak.style.backgroundImage = "url('Images4Website/Peek.gif')"
         peak.style.backgroundSize = "100%"
         flyer = true
-
     }
     else {
         message.innerHTML = "Huh, doesn't seem like that's anything...";
