@@ -4,6 +4,8 @@ const input = document.querySelector('.input')
 const submitButton = document.querySelector('.submit')
 const peak = document.createElement('div')
 
+let flyer = false
+
 
 btn.addEventListener('click', () => {
     search.classList.toggle('active')
@@ -16,7 +18,14 @@ submitButton.addEventListener("click", myFunction)
 function myFunction(){
     let userInput = document.querySelector('#Tasha');
     let message = document.querySelector('#Message');
-    document.body.removeChild(peak)
+
+    if (flyer) {
+        flyer = false
+        document.body.removeChild(peak)
+    }
+
+
+
     if (userInput.value == "hi" || userInput.value == "Hi" || userInput.value == "hello" || userInput.value == "Hello") {
             message.innerHTML = "HI THEREEEEEE ";
     }
@@ -37,6 +46,7 @@ function myFunction(){
         peak.style.height = '250px'
         peak.style.backgroundImage = "url('Images4Website/Peek.gif')"
         peak.style.backgroundSize = "100%"
+        flyer = true
 
     }
     else {
