@@ -31,12 +31,12 @@ function myFunction(){
         peak.style.position = 'absolute'
         // peak.style.backgroundColor = 'black'
         // peak.style.left = '100px'
-        peak.style.top = '-45px'
+        peak.style.top = '60px'
         peak.style.width = '200px'
         peak.style.height = '200px'
         peak.style.backgroundImage = "url('Images4Website/Peek.gif')"
-        peak.style.backgroundSize = "50%"
-        peak.style.backgroundRepeat = "noRepeat"
+        peak.style.backgroundSize = "100%"
+
     }
     else {
         message.innerHTML = "Huh, doesn't seem like that's anything...";
