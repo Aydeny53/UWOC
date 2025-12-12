@@ -14,8 +14,8 @@ body {
 
 .food {
     position: absolute;
-    height: 35%;
-    width: 25%;
+    height: 350px;
+    width: 600px;
     top: 0px;
     left: 0px;
 }
