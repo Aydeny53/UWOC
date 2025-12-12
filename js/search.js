@@ -50,5 +50,4 @@ function myFunction(){
         message.innerHTML = "Huh, doesn't seem like that's anything...";
     }
     return;
-
 }
