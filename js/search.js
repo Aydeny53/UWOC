@@ -34,6 +34,12 @@ function myFunction(){
     else if (userInput.value == "uwoc" || userInput.value == "UWoC" || userInput.value == "UWOC") {
         message.innerHTML = "It's the best thing ever!";
     }
+    else if (userInput.value == ":3") {
+        message.innerHTML = "omg bro omg D:";
+    }
+    else if (userInput.value == "owo" || userInput.value == "OWO" || userInput.value == "OwO" || userInput.value == "uwu" || userInput.value == "UWU" || userInput.value == "UwU") {
+        message.innerHTML = "You're really pushing it... >:(((";
+    }
 
     else if (userInput.value == "Flyer" || userInput.value == "flyer") {
         message.innerHTML = "Wow, I can't believe you got that honestly. Yippee! You better have sent a Hello...";
