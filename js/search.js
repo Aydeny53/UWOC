@@ -31,9 +31,9 @@ function myFunction(){
         peak.style.position = 'absolute'
         // peak.style.backgroundColor = 'black'
         // peak.style.left = '100px'
-        peak.style.top = '60px'
-        peak.style.width = '200px'
-        peak.style.height = '200px'
+        peak.style.top = '35px'
+        peak.style.width = '250px'
+        peak.style.height = '250px'
         peak.style.backgroundImage = "url('Images4Website/Peek.gif')"
         peak.style.backgroundSize = "100%"
 
