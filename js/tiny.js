@@ -7,8 +7,8 @@ let positionY = 0;
 let positionX = 0;
 
 
-let foodPosY = 35;
-let foodPosX = 75;
+let foodPosY = 45;
+let foodPosX = 65;
 
 
 let finished = false;
