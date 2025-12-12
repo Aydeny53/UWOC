@@ -37,7 +37,7 @@ function myFunction(){
     else if (userInput.value == ":3") {
         message.innerHTML = "omg bro omg D:";
     }
-    else if (userInput.value == "owo" || userInput.value == "OWO" || userInput.value == "OwO" || userInput.value == "uwu" || userInput.value == "UWU" || userInput.value == "UwU") {
+    else if (userInput.value == "owo" || userInput.value == "OWO" || userInput.value == "OwO" || userInput.value == "Owo" || userInput.value == "uwu" || userInput.value == "UWU" || userInput.value == "UwU" || userInput.value == "Uwu") {
         message.innerHTML = "You're really pushing it... >:(((";
     }
 
