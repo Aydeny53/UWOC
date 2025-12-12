@@ -28,6 +28,13 @@ body {
     font-size: 2em;
 }
 
+.Interest {
+
+    position: absolute;
+    text-align: center;
+    bottom: 200px;
+    font-size: 1em;
+}
 .please {
     /* background-color:red; */
     position: absolute;

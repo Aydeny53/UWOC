@@ -2,6 +2,8 @@ const search = document. querySelector('.search')
 const btn = document.querySelector('.btn')
 const input = document.querySelector('.input')
 const submitButton = document.querySelector('.submit')
+const peak = document.createElement('div')
+
 
 btn.addEventListener('click', () => {
     search.classList.toggle('active')
@@ -9,7 +11,6 @@ btn.addEventListener('click', () => {
 })
 
 submitButton.addEventListener("click", myFunction)
-
 
 
 function myFunction(){
@@ -23,6 +24,18 @@ function myFunction(){
     }
     else if (userInput.value == "") {
         message.innerHTML = message.innerHTML;
+    }
+    else if (userInput.value == "Flyer" || userInput.value == "flyer") {
+        message.innerHTML = "Wow, I can't believe you got that honestly. Yippee! You better have sent a Hello...";
+        document.body.appendChild(peak)
+        peak.style.position = 'absolute'
+        // peak.style.backgroundColor = 'black'
+        // peak.style.left = '100px'
+        peak.style.top = '-45px'
+        peak.style.width = '100%'
+        peak.style.height = '100%'
+        peak.style.backgroundImage = "url('Images4Website/Peek.gif')"
+        peak.style.objectFit= "cover"
     }
     else {
         message.innerHTML = "Huh, doesn't seem like that's anything...";
