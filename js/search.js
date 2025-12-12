@@ -32,10 +32,11 @@ function myFunction(){
         // peak.style.backgroundColor = 'black'
         // peak.style.left = '100px'
         peak.style.top = '-45px'
-        peak.style.width = '100%'
-        peak.style.height = '100%'
+        peak.style.width = '200px'
+        peak.style.height = '100px'
         peak.style.backgroundImage = "url('Images4Website/Peek.gif')"
-        peak.style.objectFit= "cover"
+        peak.style.backgroundSize = "auto"
+        // peak.style.objectFit= "cover"
     }
     else {
         message.innerHTML = "Huh, doesn't seem like that's anything...";
