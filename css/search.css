@@ -32,14 +32,32 @@ body {
 
 }
 
+
+
+/* vFor the submit button and messagev */
 .submit {
-    height: 1000px;
-    width: 1000px;
-    position: absolute;
-    top: 400px;
-    left: 400px;
-    background-color: black;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: white;
 }
+
+.Output {
+    position: absolute;
+    text-align: center;
+    top: 250px;
+}
+
+.submitAndMessage {
+
+    position: absolute;
+    left: 50% - 50px;
+    bottom: 350px;
+}
+/* ^For the submit button and message^ */
 
 .btn {
     background-color: white;
@@ -60,7 +78,11 @@ body {
 }
 
 .search.active .btn {
-    transform: translateX(198px);
+    transform: translate(70px, -60px);
+    /* transform: translateY(-50px);
+    transform: translateX(70px); */
+
+
 }
 
 
