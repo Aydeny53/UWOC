@@ -35,8 +35,8 @@ function myFunction(){
         peak.style.width = '200px'
         peak.style.height = '200px'
         peak.style.backgroundImage = "url('Images4Website/Peek.gif')"
-        peak.style.backgroundSize = "auto"
-        // peak.style.objectFit= "cover"
+        peak.style.backgroundSize = "50%"
+        peak.style.backgroundRepeat = "noRepeat"
     }
     else {
         message.innerHTML = "Huh, doesn't seem like that's anything...";
