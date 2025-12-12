@@ -19,7 +19,7 @@ function myFunction(){
     let userInput = document.querySelector('#Tasha');
     let message = document.querySelector('#Message');
 
-    if (flyer) {
+    if (flyer && userInput.value != "") {
         flyer = false
         document.body.removeChild(peak)
     }
