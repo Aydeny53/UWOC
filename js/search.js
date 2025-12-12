@@ -24,17 +24,17 @@ function myFunction(){
         document.body.removeChild(peak)
     }
 
+    if (userInput.value == "") {
+        message.innerHTML = message.innerHTML;
+    }
 
-
-    if (userInput.value == "hi" || userInput.value == "Hi" || userInput.value == "hello" || userInput.value == "Hello") {
+    else if (userInput.value == "hi" || userInput.value == "Hi" || userInput.value == "hello" || userInput.value == "Hello") {
             message.innerHTML = "HI THEREEEEEE ";
     }
     else if (userInput.value == "uwoc" || userInput.value == "UWoC" || userInput.value == "UWOC") {
         message.innerHTML = "It's the best thing ever!";
     }
-    else if (userInput.value == "") {
-        message.innerHTML = message.innerHTML;
-    }
+
     else if (userInput.value == "Flyer" || userInput.value == "flyer") {
         message.innerHTML = "Wow, I can't believe you got that honestly. Yippee! You better have sent a Hello...";
         document.body.appendChild(peak)
