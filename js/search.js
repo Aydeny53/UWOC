@@ -52,6 +52,9 @@ function myFunction(){
         peak.style.backgroundSize = "100%"
         flyer = true
     }
+    else if (userInput.value == "Art" || userInput.value == "art") {
+        message.innerHTML = "It's pretty cool, right?"
+    }
     else {
         message.innerHTML = "Huh, doesn't seem like that's anything...";
     }
