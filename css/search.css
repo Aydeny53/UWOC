@@ -49,6 +49,7 @@ body {
     position: absolute;
     text-align: center;
     top: 250px;
+    font-size: 2.6vw;
 }
 
 .submitAndMessage {

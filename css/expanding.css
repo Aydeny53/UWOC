@@ -47,6 +47,10 @@ body {
 .panel.active {
     flex: 10;
     transform: rotate(360deg);
+    max-width: 100%;
+    background-size: contain;
+    background position: center;
+    background-repeat: no-repeat;
 }
 
 .panel.active h3 {

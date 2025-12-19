@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
 
 }
 
@@ -45,6 +45,7 @@ body {
     color: white;
     padding: 7px 15px;
     text-decoration: none; /*takes away underline*/
+    font-size: 1.5vw
 }
 
 
@@ -58,7 +59,7 @@ body {
 }
 
 .nav.active.container {
-    padding: 10px 0;
+    padding: 5px 0;
 
 }
 

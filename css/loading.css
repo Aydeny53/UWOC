@@ -23,11 +23,12 @@ body {
     align-items: center;
     justify-content: center;
     width: 90vw;
+    max-width: 90%;
     height: 90vh;
     position: absolute;
     filter: blur(50px);
     z-index: -1;
-    bottom: 0;
+    top: 15%;
     right: 0px;
 }
 
